@@ -12,5 +12,5 @@ public class ItemRegistry {
     public static final DeferredRegister.Items ITEM_REGISTRIES = DeferredRegister.createItems(Main.MODID);
 
     //Items
-    public static final DeferredItem<Item> EXAMPLE_ITEM = ITEM_REGISTRIES.registerSimpleItem("example_item", new Item.Properties());
+    public static final DeferredItem<Item> ALLOY_NGOT = ITEM_REGISTRIES.registerSimpleItem("alloy_ingot", new Item.Properties());
 }

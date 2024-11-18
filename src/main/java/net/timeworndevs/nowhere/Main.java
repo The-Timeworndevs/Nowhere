@@ -30,7 +30,7 @@ public class Main
 
     public Main(IEventBus modEventBus, ModContainer modContainer)
     {
-        // Register the commonSetup method for modloading
+        //Register the commonSetup method for modloading
         //modEventBus.addListener(this::commonSetup);
 
 
