@@ -1,5 +1,6 @@
 package net.timeworndevs.nowhere.common;
 
+import net.minecraft.world.level.block.FallingBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.timeworndevs.nowhere.Main;
 import net.minecraft.world.item.BlockItem;
