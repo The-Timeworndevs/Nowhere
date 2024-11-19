@@ -3,5 +3,7 @@
   "itemGroup.nowhere.materials": "Nowhere Materials",
   "block.nowhere.dust_block": "Dust Block",
   "block.nowhere.packed_dust_block": "Packed Dust Block",
+  "block.nowhere.duststone": "Duststone",
+  "block.nowhere.duststone_bricks": "Duststone Bricks",
   "item.nowhere.alloy_ingot": "Alloy Ingot"
 }

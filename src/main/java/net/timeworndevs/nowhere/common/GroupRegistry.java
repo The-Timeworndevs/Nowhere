@@ -18,7 +18,9 @@ public class GroupRegistry {
             .icon(() -> BlockRegistry.DUST_BLOCK_ITEM.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 output.accept(BlockRegistry.DUST_BLOCK_ITEM.get());
-                output.accept(BlockRegistry.PACKED_DUST_BLOCK_ITEM.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
+                output.accept(BlockRegistry.PACKED_DUST_BLOCK_ITEM.get());
+                output.accept(BlockRegistry.DUSTSTONE_BLOCK_ITEM.get());
+                output.accept(BlockRegistry.DUSTSTONE_BRICKS_BLOCK_ITEM.get());
             }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_MATERIALS_TAB = GROUP_REGISTRIES.register("nowhere_materials", () -> CreativeModeTab.builder()
