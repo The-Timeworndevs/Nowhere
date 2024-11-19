@@ -1,5 +1,6 @@
 package net.timeworndevs.nowhere.common;
 
+import com.mojang.serialization.MapCodec;
 import net.minecraft.world.level.block.FallingBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.timeworndevs.nowhere.Main;
@@ -17,8 +18,14 @@ public class BlockRegistry {
     public static final DeferredRegister.Blocks BLOCK_REGISTRIES = DeferredRegister.createBlocks(Main.MODID);
 
     //Blocks
-    public static final DeferredBlock<Block> DUST_BLOCK = BLOCK_REGISTRIES.registerSimpleBlock("dust_block", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.SAND).strength(0.5F,0.5F));
-    public static final DeferredBlock<Block> PACKED_DUST_BLOCK = BLOCK_REGISTRIES.registerSimpleBlock("packed_dust_block", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.GRAVEL).strength(0.5F,0.5F));
+    //public static final DeferredBlock<Block> DUST_BLOCK = BLOCK_REGISTRIES.registerSimpleBlock("dust_block", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.SAND).strength(0.5F,0.5F));
+    public static final DeferredBlock<Block> DUST_BLOCK = BLOCK_REGISTRIES.register("dust_block", () -> new FallingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.SAND).strength(0.5F, 0.5F)) {
+        @Override
+        protected MapCodec<? extends FallingBlock> codec() {
+            return null;
+        }
+    });
+     public static final DeferredBlock<Block> PACKED_DUST_BLOCK = BLOCK_REGISTRIES.registerSimpleBlock("packed_dust_block", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.GRAVEL).strength(0.5F,0.5F));
 
     //BlockItems
     public static final DeferredItem<BlockItem> DUST_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("dust_block", DUST_BLOCK);

@@ -1,7 +1,12 @@
 {
   "variants": {
-    "": {
-      "model": "nowhere:block/dust_block"
-    }
+    "": [
+      {
+        "model": "nowhere:block/dust_block"
+      },
+      {
+        "model": "nowhere:block/dust_block_alt"
+      }
+    ]
   }
 }
