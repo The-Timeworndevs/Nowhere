@@ -28,11 +28,13 @@ public class BlockRegistry {
     public static final DeferredBlock<Block> PACKED_DUST_BLOCK = BLOCK_REGISTRIES.registerSimpleBlock("packed_dust_block", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.SOUL_SOIL).strength(0.5F,0.5F));
     public static final DeferredBlock<Block> DUSTSTONE = BLOCK_REGISTRIES.registerSimpleBlock("duststone", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.DRIPSTONE_BLOCK).strength(0.8F,0.8F));
     public static final DeferredBlock<Block> DUSTSTONE_BRICKS = BLOCK_REGISTRIES.registerSimpleBlock("duststone_bricks", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.DRIPSTONE_BLOCK).strength(0.8F,0.8F));
+    public static final DeferredBlock<Block> ALLOY_BLOCK = BLOCK_REGISTRIES.registerSimpleBlock("alloy_block", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.HEAVY_CORE).strength(5F,6F));
 
     //BlockItems
     public static final DeferredItem<BlockItem> DUST_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("dust_block", DUST_BLOCK);
     public static final DeferredItem<BlockItem> PACKED_DUST_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("packed_dust_block", PACKED_DUST_BLOCK);
     public static final DeferredItem<BlockItem> DUSTSTONE_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("duststone", DUSTSTONE);
     public static final DeferredItem<BlockItem> DUSTSTONE_BRICKS_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("duststone_bricks", DUSTSTONE_BRICKS);
+    public static final DeferredItem<BlockItem> ALLOY_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("alloy_block", ALLOY_BLOCK);
 
 }
