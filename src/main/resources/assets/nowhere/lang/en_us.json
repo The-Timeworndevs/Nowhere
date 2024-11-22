@@ -1,12 +1,18 @@
 {
   "itemGroup.nowhere.blocks": "Nowhere Blocks",
   "itemGroup.nowhere.materials": "Nowhere Materials",
+
   "block.nowhere.dust_block": "Dust Block",
+  "block.nowhere.dusty_bitumen": "Dusty Bitumen",
   "block.nowhere.packed_dust_block": "Packed Dust Block",
   "block.nowhere.duststone": "Duststone",
   "block.nowhere.duststone_bricks": "Duststone Bricks",
   "block.nowhere.ferrous_alloy_block": "Block Of Ferrous Alloy",
+  "block.nowhere.salt_crust": "Salt Crust",
+
   "item.nowhere.ferrous_alloy_ingot": "Ferrous Alloy Ingot",
   "item.nowhere.ferrous_scrap": "Ferrous Scrap",
-  "item.nowhere.ferrous_alloy_nugget": "Ferrous Alloy Nugget"
+  "item.nowhere.ferrous_alloy_nugget": "Ferrous Alloy Nugget",
+  "item.nowhere.bitumen_ball": "Bitumen Ball",
+  "item.nowhere.salt_pile": "Salt Pile"
 }
