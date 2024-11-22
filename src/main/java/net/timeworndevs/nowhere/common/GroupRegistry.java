@@ -20,15 +20,16 @@ public class GroupRegistry {
                 output.accept(BlockRegistry.PACKED_DUST_BLOCK_ITEM.get());
                 output.accept(BlockRegistry.DUSTSTONE_BLOCK_ITEM.get());
                 output.accept(BlockRegistry.DUSTSTONE_BRICKS_BLOCK_ITEM.get());
-                output.accept(BlockRegistry.ALLOY_BLOCK_ITEM);
+                output.accept(BlockRegistry.FERROUS_ALLOY_BLOCK_ITEM);
             }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_MATERIALS_TAB = GROUP_REGISTRIES.register("nowhere_materials", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.nowhere.materials"))
-            .icon(() -> ItemRegistry.ALLOY_INGOT.get().getDefaultInstance())
+            .icon(() -> ItemRegistry.FERROUS_ALLOY_INGOT.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
-                output.accept(ItemRegistry.ALLOY_INGOT.get());
-                output.accept(ItemRegistry.ALLOY_NUGGET.get());
+                output.accept(ItemRegistry.FERROUS_SCRAP.get());
+                output.accept(ItemRegistry.FERROUS_ALLOY_INGOT.get());
+                output.accept(ItemRegistry.FERROUS_ALLOY_NUGGET.get());
             }).build());
 
 }

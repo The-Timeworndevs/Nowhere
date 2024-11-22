@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "nowhere:item/alloy_ingot"
+    "layer0": "nowhere:item/ferrous_scrap"
   }
 }

@@ -5,7 +5,8 @@
   "block.nowhere.packed_dust_block": "Packed Dust Block",
   "block.nowhere.duststone": "Duststone",
   "block.nowhere.duststone_bricks": "Duststone Bricks",
-  "block.nowhere.alloy_block": "Block Of Alloy",
-  "item.nowhere.alloy_ingot": "Alloy Ingot",
-  "item.nowhere.alloy_nugget": "Alloy Nugget"
+  "block.nowhere.ferrous_alloy_block": "Block Of Ferrous Alloy",
+  "item.nowhere.ferrous_alloy_ingot": "Ferrous Alloy Ingot",
+  "item.nowhere.ferrous_scrap": "Ferrous Scrap",
+  "item.nowhere.ferrous_alloy_nugget": "Ferrous Alloy Nugget"
 }
