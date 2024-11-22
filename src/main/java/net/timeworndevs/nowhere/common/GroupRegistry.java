@@ -23,6 +23,7 @@ public class GroupRegistry {
                 output.accept(BlockRegistry.DUSTSTONE_BRICKS_BLOCK_ITEM.get());
                 output.accept(BlockRegistry.FERROUS_ALLOY_BLOCK_ITEM.get());
                 output.accept(BlockRegistry.SALT_CRUST_BLOCK_ITEM.get());
+                output.accept(BlockRegistry.BITUMEN_BLOCK_ITEM.get());
             }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_MATERIALS_TAB = GROUP_REGISTRIES.register("nowhere_materials", () -> CreativeModeTab.builder()

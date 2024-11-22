@@ -1,11 +1,9 @@
 package net.timeworndevs.nowhere.common;
 
 import com.mojang.serialization.MapCodec;
-import net.minecraft.world.level.block.FallingBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.timeworndevs.nowhere.Main;
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -30,6 +28,7 @@ public class BlockRegistry {
     public static final DeferredBlock<Block> DUSTSTONE_BRICKS = BLOCK_REGISTRIES.registerSimpleBlock("duststone_bricks", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.DRIPSTONE_BLOCK).strength(0.8F,0.8F));
     public static final DeferredBlock<Block> FERROUS_ALLOY_BLOCK = BLOCK_REGISTRIES.registerSimpleBlock("ferrous_alloy_block", BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).sound(SoundType.HEAVY_CORE).strength(5F,6F));
     public static final DeferredBlock<Block> SALT_CRUST = BLOCK_REGISTRIES.registerSimpleBlock("salt_crust", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.CALCITE).strength(0.5F,0.5F));
+    public static final DeferredBlock<Block> BITUMEN_BLOCK = BLOCK_REGISTRIES.register("bitumen_block", () -> new SoulSandBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLACK).sound(SoundType.MUD).strength(0.5F,0.5F).speedFactor(0.4F)));
 
     //BlockItems
     public static final DeferredItem<BlockItem> DUST_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("dust_block", DUST_BLOCK);
@@ -39,5 +38,6 @@ public class BlockRegistry {
     public static final DeferredItem<BlockItem> DUSTSTONE_BRICKS_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("duststone_bricks", DUSTSTONE_BRICKS);
     public static final DeferredItem<BlockItem> FERROUS_ALLOY_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("ferrous_alloy_block", FERROUS_ALLOY_BLOCK);
     public static final DeferredItem<BlockItem> SALT_CRUST_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("salt_crust", SALT_CRUST);
+    public static final DeferredItem<BlockItem> BITUMEN_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("bitumen_block", BITUMEN_BLOCK);
 
 }
