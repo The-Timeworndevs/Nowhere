@@ -47,6 +47,6 @@ public class BlockRegistry {
     public static final DeferredItem<BlockItem> FERROUS_ALLOY_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("ferrous_alloy_block", FERROUS_ALLOY_BLOCK);
     public static final DeferredItem<BlockItem> SALT_CRUST_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("salt_crust", SALT_CRUST);
     public static final DeferredItem<BlockItem> BITUMEN_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("bitumen_block", BITUMEN_BLOCK);
-    public static final DeferredItem<BlockItem> MAKESHIFT_TORCH_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.("makeshift_torch", new StandingAndWallBlockItem(MAKESHIFT_TORCH.get(), WALL_MAKESHIFT_TORCH.get(), new Item.Properties(), Direction.DOWN));
+    public static final DeferredItem<BlockItem> MAKESHIFT_TORCH_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.register("makeshift_torch", new StandingAndWallBlockItem(MAKESHIFT_TORCH.get(), WALL_MAKESHIFT_TORCH.get(), new Item.Properties(), Direction.DOWN));
 
 }
