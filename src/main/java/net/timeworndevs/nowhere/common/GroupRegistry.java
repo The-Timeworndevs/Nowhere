@@ -17,7 +17,7 @@ public class GroupRegistry {
             .icon(() -> BlockRegistry.DUST_BLOCK_ITEM.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 output.accept(BlockRegistry.DUST_BLOCK_ITEM.get());
-                output.accept(BlockRegistry.DUSTY_BITUEMN_BLOCK_ITEM.get());
+                output.accept(BlockRegistry.DUSTY_BITUMEN_BLOCK_ITEM.get());
                 output.accept(BlockRegistry.PACKED_DUST_BLOCK_ITEM.get());
                 output.accept(BlockRegistry.DUSTSTONE_BLOCK_ITEM.get());
                 output.accept(BlockRegistry.DUSTSTONE_BRICKS_BLOCK_ITEM.get());
