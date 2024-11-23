@@ -10,6 +10,8 @@
   "block.nowhere.ferrous_alloy_block": "Block Of Ferrous Alloy",
   "block.nowhere.salt_crust": "Salt Crust",
   "block.nowhere.bitumen_block": "Block of Bitumen",
+  "block.nowhere.makeshift_torch": "Makeshift Torch",
+  "block.nowhere.makeshift_wall_torch": "Makeshift Wall Torch",
 
   "item.nowhere.ferrous_alloy_ingot": "Ferrous Alloy Ingot",
   "item.nowhere.ferrous_scrap": "Ferrous Scrap",
