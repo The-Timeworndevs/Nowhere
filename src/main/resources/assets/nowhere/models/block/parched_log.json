@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "nowhere:block/parched_log_top",
+    "side": "nowhere:block/parched_log"
+  }
+}

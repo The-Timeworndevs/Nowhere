@@ -16,6 +16,8 @@ public class GroupRegistry {
             .title(Component.translatable("itemGroup.nowhere.blocks"))
             .icon(() -> BlockRegistry.DUST_BLOCK_ITEM.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
+                output.accept(BlockRegistry.PARCHED_LOG_BLOCK_ITEM.get());
+                output.accept(BlockRegistry.STRIPPED_PARCHED_LOG_BLOCK_ITEM.get());
                 output.accept(BlockRegistry.DUST_BLOCK_ITEM.get());
                 output.accept(BlockRegistry.DUSTY_BITUMEN_BLOCK_ITEM.get());
                 output.accept(BlockRegistry.PACKED_DUST_BLOCK_ITEM.get());
@@ -24,7 +26,7 @@ public class GroupRegistry {
                 output.accept(BlockRegistry.FERROUS_ALLOY_BLOCK_ITEM.get());
                 output.accept(BlockRegistry.SALT_CRUST_BLOCK_ITEM.get());
                 output.accept(BlockRegistry.BITUMEN_BLOCK_ITEM.get());
-                output.accept(BlockRegistry.MAKESHIFT_TORCH.get());
+                output.accept(BlockRegistry.MAKESHIFT_TORCH_BLOCK_ITEM.get());
             }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_MATERIALS_TAB = GROUP_REGISTRIES.register("nowhere_materials", () -> CreativeModeTab.builder()
