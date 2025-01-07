@@ -6,10 +6,10 @@
       "y": 90
     },
     "axis=y": {
-      "model": "nowhere:block/tripped_parched_log"
+      "model": "nowhere:block/stripped_parched_log"
     },
     "axis=z": {
-      "model": "nowhere:block/tripped_parched_log_horizontal",
+      "model": "nowhere:block/stripped_parched_log_horizontal",
       "x": 90
     }
   }

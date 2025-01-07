@@ -1,9 +1,14 @@
 {
   "itemGroup.nowhere.blocks": "Nowhere Blocks",
+  "itemGroup.nowhere.natural": "Nowhere Natural Blocks",
+  "itemGroup.nowhere.functional": "Nowhere Functional Blocks",
+  "itemGroup.nowhere.tools": "Nowhere Tools",
+  "itemGroup.nowhere.combat": "Nowhere Combat",
   "itemGroup.nowhere.materials": "Nowhere Materials",
 
   "block.nowhere.parched_log": "Parched Log",
   "block.nowhere.stripped_parched_log": "Stripped Parched Log",
+  "block.nowhere.parched_planks": "Parched Planks",
   "block.nowhere.dust_block": "Dust Block",
   "block.nowhere.dusty_bitumen": "Dusty Bitumen",
   "block.nowhere.packed_dust_block": "Packed Dust Block",
