@@ -7,6 +7,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.StandingAndWallBlockItem;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.material.PushReaction;
 import net.timeworndevs.nowhere.Main;
 import net.minecraft.world.item.BlockItem;
@@ -22,9 +23,10 @@ public class BlockRegistry {
     public static final DeferredRegister.Blocks BLOCK_REGISTRIES = DeferredRegister.createBlocks(Main.MODID);
 
     //Blocks
-    public static final DeferredBlock<Block> PARCHED_LOG = BLOCK_REGISTRIES.register("parched_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.STEM).strength(2.5F, 2.5F)));
-    public static final DeferredBlock<Block> STRIPPED_PARCHED_LOG = BLOCK_REGISTRIES.register("stripped_parched_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.STEM).strength(2.5F, 2.5F)));
-    public static final DeferredBlock<Block> PARCHED_PLANKS = BLOCK_REGISTRIES.registerSimpleBlock("parched_planks", BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).strength(2.5F, 2.5F));
+    public static final DeferredBlock<Block> PARCHED_LOG = BLOCK_REGISTRIES.register("parched_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.STEM).strength(2.5F, 3.5F)));
+    public static final DeferredBlock<Block> STRIPPED_PARCHED_LOG = BLOCK_REGISTRIES.register("stripped_parched_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.STEM).strength(2.5F, 3.5F)));
+    public static final DeferredBlock<Block> PARCHED_PLANKS = BLOCK_REGISTRIES.registerSimpleBlock("parched_planks", BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).strength(2.5F, 3.5F));
+    public static final DeferredBlock<Block> PARCHED_DOOR = BLOCK_REGISTRIES.register("parched_door", () -> new DoorBlock(BlockSetType.CRIMSON, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).strength(2.5F,3.5F)));
     public static final DeferredBlock<Block> DUST_BLOCK = BLOCK_REGISTRIES.register("dust_block", () -> new FallingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.SOUL_SAND).strength(0.5F, 0.5F)) {
         @Override
         protected MapCodec<? extends FallingBlock> codec() {
@@ -45,6 +47,7 @@ public class BlockRegistry {
     public static final DeferredItem<BlockItem> PARCHED_LOG_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("parched_log", PARCHED_LOG);
     public static final DeferredItem<BlockItem> STRIPPED_PARCHED_LOG_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("stripped_parched_log", STRIPPED_PARCHED_LOG);
     public static final DeferredItem<BlockItem> PARCHED_PLANKS_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("parched_planks", PARCHED_PLANKS);
+    public static final DeferredItem<BlockItem> PARCHED_DOOR_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("parched_door", PARCHED_DOOR);
     public static final DeferredItem<BlockItem> DUST_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("dust_block", DUST_BLOCK);
     public static final DeferredItem<BlockItem> DUSTY_BITUMEN_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("dusty_bitumen", DUSTY_BITUMEN);
     public static final DeferredItem<BlockItem> PACKED_DUST_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("packed_dust_block", PACKED_DUST_BLOCK);

@@ -22,7 +22,6 @@ public class GroupRegistry {
                 output.accept(BlockRegistry.DUSTSTONE_BLOCK_ITEM.get());
                 output.accept(BlockRegistry.DUSTSTONE_BRICKS_BLOCK_ITEM.get());
                 output.accept(BlockRegistry.FERROUS_ALLOY_BLOCK_ITEM.get());
-                output.accept(BlockRegistry.BITUMEN_BLOCK_ITEM.get());
             }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_NATURAL_TAB = GROUP_REGISTRIES.register("nowhere_natural_blocks", () -> CreativeModeTab.builder()
@@ -31,6 +30,7 @@ public class GroupRegistry {
             .displayItems((parameters, output) -> {
                 output.accept(BlockRegistry.DUST_BLOCK_ITEM.get());
                 output.accept(BlockRegistry.DUSTY_BITUMEN_BLOCK_ITEM.get());
+                output.accept(BlockRegistry.BITUMEN_BLOCK_ITEM.get());
                 output.accept(BlockRegistry.PACKED_DUST_BLOCK_ITEM.get());
                 output.accept(BlockRegistry.SALT_CRUST_BLOCK_ITEM.get());
             }).build());
@@ -40,6 +40,7 @@ public class GroupRegistry {
             .icon(() -> BlockRegistry.MAKESHIFT_TORCH_BLOCK_ITEM.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 output.accept(BlockRegistry.MAKESHIFT_TORCH_BLOCK_ITEM.get());
+                output.accept(BlockRegistry.PARCHED_DOOR.get());
             }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_TOOLS_TAB = GROUP_REGISTRIES.register("nowhere_tools", () -> CreativeModeTab.builder()
