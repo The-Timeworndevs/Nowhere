@@ -40,7 +40,8 @@ public class GroupRegistry {
             .icon(() -> BlockRegistry.MAKESHIFT_TORCH_BLOCK_ITEM.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 output.accept(BlockRegistry.MAKESHIFT_TORCH_BLOCK_ITEM.get());
-                output.accept(BlockRegistry.PARCHED_DOOR.get());
+                output.accept(BlockRegistry.PARCHED_DOOR_BLOCK_ITEM.get());
+                output.accept(BlockRegistry.FERROUS_ALLOY_DOOR_BLOCK_ITEM);
             }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_TOOLS_TAB = GROUP_REGISTRIES.register("nowhere_tools", () -> CreativeModeTab.builder()

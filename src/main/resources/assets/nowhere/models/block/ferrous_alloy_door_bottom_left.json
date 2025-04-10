@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_left",
+  "textures": {
+    "bottom": "nowhere:block/ferrous_alloy_door_bottom",
+    "top": "nowhere:block/ferrous_alloy_door_top"
+  }
+}
