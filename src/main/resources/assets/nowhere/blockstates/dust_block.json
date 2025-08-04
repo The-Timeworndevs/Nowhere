@@ -1,0 +1,18 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "nowhere:block/dust_block"
+      },
+      {
+        "model": "nowhere:block/dust_block_alt"
+      },
+      {
+        "model": "nowhere:block/dust_block_alt_2"
+      },
+      {
+        "model": "nowhere:block/dust_block_alt_3"
+      }
+    ]
+  }
+}

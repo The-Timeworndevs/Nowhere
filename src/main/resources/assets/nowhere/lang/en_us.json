@@ -1,0 +1,30 @@
+{
+  "itemGroup.nowhere.blocks": "Nowhere Blocks",
+  "itemGroup.nowhere.natural": "Nowhere Natural Blocks",
+  "itemGroup.nowhere.functional": "Nowhere Functional Blocks",
+  "itemGroup.nowhere.tools": "Nowhere Tools",
+  "itemGroup.nowhere.combat": "Nowhere Combat",
+  "itemGroup.nowhere.materials": "Nowhere Materials",
+
+  "block.nowhere.parched_log": "Parched Log",
+  "block.nowhere.stripped_parched_log": "Stripped Parched Log",
+  "block.nowhere.parched_planks": "Parched Planks",
+  "block.nowhere.parched_door": "Parched Door",
+  "block.nowhere.dust_block": "Dust Block",
+  "block.nowhere.dusty_bitumen": "Dusty Bitumen",
+  "block.nowhere.packed_dust_block": "Packed Dust Block",
+  "block.nowhere.duststone": "Duststone",
+  "block.nowhere.duststone_bricks": "Duststone Bricks",
+  "block.nowhere.ferrous_alloy_block": "Block Of Ferrous Alloy",
+  "block.nowhere.ferrous_alloy_door": "Ferrous Alloy Door",
+  "block.nowhere.salt_crust": "Salt Crust",
+  "block.nowhere.bitumen_block": "Block of Bitumen",
+  "block.nowhere.makeshift_torch": "Makeshift Torch",
+  "block.nowhere.makeshift_wall_torch": "Makeshift Wall Torch",
+
+  "item.nowhere.ferrous_alloy_ingot": "Ferrous Alloy Ingot",
+  "item.nowhere.ferrous_scrap": "Ferrous Scrap",
+  "item.nowhere.ferrous_alloy_nugget": "Ferrous Alloy Nugget",
+  "item.nowhere.bitumen_ball": "Bitumen Ball",
+  "item.nowhere.salt_pile": "Salt Pile"
+}

@@ -1,0 +1,10 @@
+{
+  "values": {
+    "nowhere:bitumen_ball": {
+      "burn_time": 1200
+    },
+    "nowhere:bitumen_block": {
+      "burn_time": 12000
+    }
+  }
+}

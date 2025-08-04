@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right",
+  "textures": {
+    "bottom": "nowhere:block/parched_door_bottom",
+    "top": "nowhere:block/parched_door_top"
+  }
+}
