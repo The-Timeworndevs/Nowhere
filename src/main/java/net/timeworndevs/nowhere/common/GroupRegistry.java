@@ -47,7 +47,7 @@ public class GroupRegistry {
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_TOOLS_TAB = GROUP_REGISTRIES.register("nowhere_tools", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.nowhere.tools"))
-            .icon(() -> ItemRegistry.FERROUS_ALLOY_NUGGET.get().getDefaultInstance())
+            .icon(() -> ItemRegistry.SCRAP_PICKAXE.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
             }).build());
 

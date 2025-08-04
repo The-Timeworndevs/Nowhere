@@ -15,7 +15,7 @@ public class ItemRegistry {
 
     //Items
     public static final DeferredItem<Item> FERROUS_SCRAP = ITEM_REGISTRIES.registerSimpleItem("ferrous_scrap", new Item.Properties());
-    public static final DeferredItem<Item> FERROUS_SCRAP = ITEM_REGISTRIES.registerItem("ferrous_scrap", new PickaxeItem(NowhereTiers.SCRAP, new Item.Properties()));
+    public static final DeferredItem< > SCRAP_PICKAXE= ITEM_REGISTRIES.registerItem("scrap_pickaxe",new PickaxeItem(NowhereTiers.SCRAP, new Item.Properties()));
     public static final DeferredItem<Item> FERROUS_ALLOY_INGOT = ITEM_REGISTRIES.registerSimpleItem("ferrous_alloy_ingot", new Item.Properties());
     public static final DeferredItem<Item> FERROUS_ALLOY_NUGGET = ITEM_REGISTRIES.registerSimpleItem("ferrous_alloy_nugget", new Item.Properties());
     public static final DeferredItem<Item> BITUMEN_BALL = ITEM_REGISTRIES.registerSimpleItem("bitumen_ball", new Item.Properties());
