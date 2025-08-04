@@ -36,6 +36,7 @@ public class BlockRegistry {
     public static final DeferredBlock<Block> PACKED_DUST_BLOCK = BLOCK_REGISTRIES.registerSimpleBlock("packed_dust_block", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.SOUL_SOIL).strength(0.5F,0.5F));
     public static final DeferredBlock<Block> DUSTY_BITUMEN = BLOCK_REGISTRIES.registerSimpleBlock("dusty_bitumen", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.SOUL_SOIL).strength(0.5F,0.5F));
     public static final DeferredBlock<Block> DUSTSTONE = BLOCK_REGISTRIES.registerSimpleBlock("duststone", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.DRIPSTONE_BLOCK).strength(0.8F,0.8F));
+    public static final DeferredBlock<Block> FERROUS_SCRAP_BLOCK = BLOCK_REGISTRIES.registerSimpleBlock("ferrous_scrap_block", BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.HEAVY_CORE).strength(5F,6F));
     public static final DeferredBlock<Block> DUSTSTONE_BRICKS = BLOCK_REGISTRIES.registerSimpleBlock("duststone_bricks", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.DRIPSTONE_BLOCK).strength(0.8F,0.8F));
     public static final DeferredBlock<Block> FERROUS_ALLOY_BLOCK = BLOCK_REGISTRIES.registerSimpleBlock("ferrous_alloy_block", BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).sound(SoundType.HEAVY_CORE).strength(5F,6F));
     public static final DeferredBlock<Block> FERROUS_ALLOY_DOOR = BLOCK_REGISTRIES.register("ferrous_alloy_door", () -> new DoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).sound(SoundType.HEAVY_CORE).strength(5F,6F)));
@@ -54,6 +55,7 @@ public class BlockRegistry {
     public static final DeferredItem<BlockItem> PACKED_DUST_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("packed_dust_block", PACKED_DUST_BLOCK);
     public static final DeferredItem<BlockItem> DUSTSTONE_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("duststone", DUSTSTONE);
     public static final DeferredItem<BlockItem> DUSTSTONE_BRICKS_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("duststone_bricks", DUSTSTONE_BRICKS);
+    public static final DeferredItem<BlockItem> FERROUS_SCRAP_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("ferrous_scrap_block", FERROUS_SCRAP_BLOCK);
     public static final DeferredItem<BlockItem> FERROUS_ALLOY_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("ferrous_alloy_block", FERROUS_ALLOY_BLOCK);
     public static final DeferredItem<BlockItem> FERROUS_ALLOY_DOOR_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("ferrous_alloy_door", FERROUS_ALLOY_DOOR);
     public static final DeferredItem<BlockItem> SALT_CRUST_BLOCK_ITEM = ItemRegistry.ITEM_REGISTRIES.registerSimpleBlockItem("salt_crust", SALT_CRUST);

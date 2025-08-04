@@ -1,5 +1,7 @@
 package net.timeworndevs.nowhere.common;
 
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.PickaxeItem;
 import net.timeworndevs.nowhere.Main;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -16,4 +18,5 @@ public class ItemRegistry {
     public static final DeferredItem<Item> FERROUS_ALLOY_NUGGET = ITEM_REGISTRIES.registerSimpleItem("ferrous_alloy_nugget", new Item.Properties());
     public static final DeferredItem<Item> BITUMEN_BALL = ITEM_REGISTRIES.registerSimpleItem("bitumen_ball", new Item.Properties());
     public static final DeferredItem<Item> SALT_PILE = ITEM_REGISTRIES.registerSimpleItem("salt_pile", new Item.Properties());
+
 }

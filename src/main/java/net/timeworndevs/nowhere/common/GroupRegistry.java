@@ -21,6 +21,7 @@ public class GroupRegistry {
                 output.accept(BlockRegistry.PARCHED_PLANKS_BLOCK_ITEM.get());
                 output.accept(BlockRegistry.DUSTSTONE_BLOCK_ITEM.get());
                 output.accept(BlockRegistry.DUSTSTONE_BRICKS_BLOCK_ITEM.get());
+                output.accept(BlockRegistry.FERROUS_SCRAP_BLOCK_ITEM.get());
                 output.accept(BlockRegistry.FERROUS_ALLOY_BLOCK_ITEM.get());
             }).build());
 
