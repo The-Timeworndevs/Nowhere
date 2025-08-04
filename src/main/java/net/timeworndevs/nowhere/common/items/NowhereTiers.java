@@ -14,7 +14,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Objects;
 import java.util.function.Supplier;
 
-public enum NowhereTiers implements Tier{;
+public enum NowhereTiers implements Tier{
 
     SCRAP(NowhereBlockTags.INCORRECT_FOR_SCRAP_TOOLS, 131, 4.0F, 1.0F, 5, () -> Ingredient.of(new ItemLike[]{ItemRegistry.FERROUS_SCRAP}));
 
