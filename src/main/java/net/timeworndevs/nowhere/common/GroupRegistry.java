@@ -49,12 +49,17 @@ public class GroupRegistry {
             .title(Component.translatable("itemGroup.nowhere.tools"))
             .icon(() -> ItemRegistry.SCRAP_PICKAXE.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
+                output.accept(ItemRegistry.SCRAP_SHOVEL);
+                output.accept(ItemRegistry.SCRAP_PICKAXE);
+                output.accept(ItemRegistry.SCRAP_AXE);
+                output.accept(ItemRegistry.SCRAP_HOE);
             }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_COMBAT_TAB = GROUP_REGISTRIES.register("nowhere_combat", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.nowhere.combat"))
-            .icon(() -> ItemRegistry.FERROUS_SCRAP.get().getDefaultInstance())
+            .icon(() -> ItemRegistry.SCRAP_SWORD.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
+                output.accept(ItemRegistry.SCRAP_SWORD);
             }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_MATERIALS_TAB = GROUP_REGISTRIES.register("nowhere_materials", () -> CreativeModeTab.builder()
