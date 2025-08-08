@@ -1,7 +1,12 @@
 {
   "variants": {
-    "": {
-      "model": "nowhere:block/ferrous_scrap_block"
-    }
+    "": [
+      {
+        "model": "nowhere:block/ferrous_scrap_block"
+      },
+      {
+        "model": "nowhere:block/ferrous_scrap_block2"
+      }
+    ]
   }
 }
