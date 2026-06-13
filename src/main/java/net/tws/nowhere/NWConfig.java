@@ -1,4 +1,4 @@
-package net.timeworndevs.nowhere;
+package net.tws.nowhere;
 
 import java.util.List;
 import java.util.Set;
@@ -14,8 +14,8 @@ import net.neoforged.neoforge.common.ModConfigSpec;
 
 // An example config class. This is not required, but it's a good idea to have one to keep your config organized.
 // Demonstrates how to use Neo's config APIs
-@EventBusSubscriber(modid = Main.MODID, bus = EventBusSubscriber.Bus.MOD)
-public class Config
+@EventBusSubscriber(modid = NWMain.MODID, bus = EventBusSubscriber.Bus.MOD)
+public class NWConfig
 {
     private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
 
@@ -34,7 +34,7 @@ public class Config
     // a list of strings that are treated as resource locations for items
     private static final ModConfigSpec.ConfigValue<List<? extends String>> ITEM_STRINGS = BUILDER
             .comment("A list of items to log on common setup.")
-            .defineListAllowEmpty("items", List.of("minecraft:iron_ingot"), Config::validateItemName);
+            .defineListAllowEmpty("items", List.of("minecraft:iron_ingot"), NWConfig::validateItemName);
 
     static final ModConfigSpec SPEC = BUILDER.build();
 

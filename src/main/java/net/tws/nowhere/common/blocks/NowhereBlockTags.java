@@ -1,10 +1,10 @@
-package net.timeworndevs.nowhere.common.blocks;
+package net.tws.nowhere.common.blocks;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
-import net.timeworndevs.nowhere.Main;
+import net.tws.nowhere.NWMain;
 
 public final class NowhereBlockTags {
 
@@ -16,7 +16,7 @@ public final class NowhereBlockTags {
     }
 
     public static TagKey<Block> create(String name) {
-        return TagKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Main.MODID, name));
+        return TagKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(NWMain.MODID, name));
     }
 
     public static TagKey<Block> create(ResourceLocation name) {

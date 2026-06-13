@@ -1,13 +1,12 @@
-package net.timeworndevs.nowhere;
+package net.tws.nowhere;
 
-import net.timeworndevs.nowhere.common.BlockRegistry;
-import net.timeworndevs.nowhere.common.GroupRegistry;
-import net.timeworndevs.nowhere.common.ItemRegistry;
+import net.tws.nowhere.common.NWBlockRegistry;
+import net.tws.nowhere.common.NWGroupRegistry;
+import net.tws.nowhere.common.NWItemRegistry;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
-import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -20,24 +19,24 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
 
-@Mod(Main.MODID)
-public class Main {
+@Mod(NWMain.MODID)
+public class NWMain {
 
     public static final String MODID = "nowhere";
 
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public Main(IEventBus modEventBus, ModContainer modContainer) {
+    public NWMain(IEventBus modEventBus, ModContainer modContainer) {
 
-        BlockRegistry.BLOCK_REGISTRIES.register(modEventBus);
+        NWBlockRegistry.BLOCK_REGISTRIES.register(modEventBus);
 
-        ItemRegistry.ITEM_REGISTRIES.register(modEventBus);
+        NWItemRegistry.ITEM_REGISTRIES.register(modEventBus);
 
-        GroupRegistry.GROUP_REGISTRIES.register(modEventBus);
+        NWGroupRegistry.GROUP_REGISTRIES.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 
-        modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        modContainer.registerConfig(ModConfig.Type.COMMON, NWConfig.SPEC);
     }
 
 

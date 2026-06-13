@@ -1,17 +1,17 @@
-package net.timeworndevs.nowhere.common;
+package net.tws.nowhere.common;
 
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.*;
-import net.timeworndevs.nowhere.Main;
+import net.tws.nowhere.NWMain;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.timeworndevs.nowhere.common.items.NowhereTiers;
+import net.tws.nowhere.common.items.NowhereTiers;
 
-public class ItemRegistry {
+public class NWItemRegistry {
 
     //Registry
-    public static final DeferredRegister.Items ITEM_REGISTRIES = DeferredRegister.createItems(Main.MODID);
+    public static final DeferredRegister.Items ITEM_REGISTRIES = DeferredRegister.createItems(NWMain.MODID);
 
 
     //Items

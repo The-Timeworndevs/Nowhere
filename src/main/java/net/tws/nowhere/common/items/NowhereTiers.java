@@ -1,4 +1,4 @@
-package net.timeworndevs.nowhere.common.items;
+package net.tws.nowhere.common.items;
 
 import com.google.common.base.Suppliers;
 import net.minecraft.tags.TagKey;
@@ -6,15 +6,15 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
-import net.timeworndevs.nowhere.common.ItemRegistry;
-import net.timeworndevs.nowhere.common.blocks.NowhereBlockTags;
+import net.tws.nowhere.common.NWItemRegistry;
+import net.tws.nowhere.common.blocks.NowhereBlockTags;
 
 import java.util.Objects;
 import java.util.function.Supplier;
 
 public enum NowhereTiers implements Tier{
 
-    SCRAP(NowhereBlockTags.INCORRECT_FOR_SCRAP_TOOLS, 131, 4.0F, 1.0F, 5, () -> Ingredient.of(new ItemLike[]{ItemRegistry.FERROUS_SCRAP}));
+    SCRAP(NowhereBlockTags.INCORRECT_FOR_SCRAP_TOOLS, 131, 4.0F, 1.0F, 5, () -> Ingredient.of(new ItemLike[]{NWItemRegistry.FERROUS_SCRAP}));
 
     private final TagKey<Block> incorrectBlocksForDrops;
     private final int uses;
