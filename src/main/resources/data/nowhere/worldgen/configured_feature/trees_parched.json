@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": "nowhere:parched_oak_checked",
+    "features": [
+      {
+        "chance": 0.1,
+        "feature": "nowhere:fancy_parched_oak_checked"
+      }
+    ]
+  }
+}

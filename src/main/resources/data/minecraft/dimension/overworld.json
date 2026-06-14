@@ -5,15 +5,39 @@
     "biome_source": {
       "biomes": [
         {
+          "biome": "nowhere:salt_flats",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": -1,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
           "biome": "nowhere:dunes",
           "parameters": {
-            "continentalness": 0,
-            "depth": 0,
-            "erosion": 0,
-            "humidity": 0,
-            "offset": 0,
             "temperature": 0,
-            "weirdness": 0
+            "humidity": 0,
+            "continentalness": 0.64,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "nowhere:parched_forest",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0.5,
+            "continentalness": 0.64,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
           }
         }
       ],
