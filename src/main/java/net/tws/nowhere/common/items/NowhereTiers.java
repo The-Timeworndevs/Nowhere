@@ -1,20 +1,23 @@
 package net.tws.nowhere.common.items;
 
 import com.google.common.base.Suppliers;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
-import net.tws.nowhere.common.NWItemRegistry;
-import net.tws.nowhere.common.blocks.NowhereBlockTags;
+import net.tws.nowhere.common.NWBlocks;
+import net.tws.nowhere.common.NWItems;
 
 import java.util.Objects;
 import java.util.function.Supplier;
 
-public enum NowhereTiers implements Tier{
+public enum NowhereTiers implements Tier {
 
-    SCRAP(NowhereBlockTags.INCORRECT_FOR_SCRAP_TOOLS, 131, 4.0F, 1.0F, 5, () -> Ingredient.of(new ItemLike[]{NWItemRegistry.FERROUS_SCRAP}));
+    PARCHED_WOOD(BlockTags.INCORRECT_FOR_WOODEN_TOOL, 90, 2.0F, 0.0F, 15, () -> Ingredient.of(new ItemLike[]{NWBlocks.PARCHED_PLANKS_ITEM})),
+    SCRAP(BlockTags.INCORRECT_FOR_STONE_TOOL, 200, 4.0F, 1.0F, 5, () -> Ingredient.of(new ItemLike[]{NWItems.FERROUS_SCRAP})),
+    FERROUS(BlockTags.INCORRECT_FOR_IRON_TOOL, 300, 6.0F, 2.0F, 14, () -> Ingredient.of(new ItemLike[]{NWItems.FERROUS_SCRAP}));
 
     private final TagKey<Block> incorrectBlocksForDrops;
     private final int uses;

@@ -1,0 +1,83 @@
+package net.tws.nowhere.common;
+
+import com.mojang.serialization.MapCodec;
+import net.minecraft.core.Direction;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.StandingAndWallBlockItem;
+import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.material.PushReaction;
+import net.tws.nowhere.NWMain;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
+import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredItem;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.tws.nowhere.common.blocks.NWBlockSetTypes;
+
+public class NWBlocks {
+
+    //Registry
+    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(NWMain.MODID);
+
+    //Blocks
+    //Natural Blocks
+    public static final DeferredBlock<Block> PARCHED_LOG = BLOCKS.register("parched_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.STEM).strength(2.5F, 3.5F)));
+    public static final DeferredBlock<Block> DUST_BLOCK = BLOCKS.register("dust_block", () -> new FallingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.SOUL_SAND).strength(0.5F, 0.5F)) {
+        @Override
+        protected MapCodec<? extends FallingBlock> codec() {
+            return null;
+        }
+    });
+    public static final DeferredBlock<Block> PACKED_DUST_BLOCK = BLOCKS.registerSimpleBlock("packed_dust_block", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.SOUL_SOIL).strength(0.5F,0.5F));
+    public static final DeferredBlock<Block> DUSTY_BITUMEN = BLOCKS.registerSimpleBlock("dusty_bitumen", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.SOUL_SOIL).strength(0.5F,0.5F));
+    public static final DeferredBlock<Block> DUSTSTONE = BLOCKS.registerSimpleBlock("duststone", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.DRIPSTONE_BLOCK).strength(0.8F,0.8F).requiresCorrectToolForDrops());
+
+    //Building Blocks
+    public static final DeferredBlock<Block> COBBLED_DUSTSTONE = BLOCKS.registerSimpleBlock("cobbled_duststone", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.DRIPSTONE_BLOCK).strength(0.8F,0.8F).requiresCorrectToolForDrops());
+    public static final DeferredBlock<Block> DUSTSTONE_BRICKS = BLOCKS.registerSimpleBlock("duststone_bricks", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.DRIPSTONE_BLOCK).strength(0.8F,0.8F).requiresCorrectToolForDrops());
+    public static final DeferredBlock<Block> PARCHED_PLANKS = BLOCKS.registerSimpleBlock("parched_planks", BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).strength(2.5F, 3.5F));
+    public static final DeferredBlock<Block> STRIPPED_PARCHED_LOG = BLOCKS.register("stripped_parched_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.STEM).strength(2.5F, 3.5F)));
+
+    //Resources
+    public static final DeferredBlock<Block> FERROUS_SCRAP_BLOCK = BLOCKS.registerSimpleBlock("ferrous_scrap_block", BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.HEAVY_CORE).strength(5F,6F).requiresCorrectToolForDrops());
+    public static final DeferredBlock<Block> FERROUS_ALLOY_BLOCK = BLOCKS.registerSimpleBlock("ferrous_alloy_block", BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).sound(SoundType.HEAVY_CORE).strength(5F,6F).requiresCorrectToolForDrops());
+    public static final DeferredBlock<Block> SALT_CRUST = BLOCKS.registerSimpleBlock("salt_crust", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.CALCITE).strength(0.5F,0.5F));
+    public static final DeferredBlock<Block> BITUMEN_BLOCK = BLOCKS.register("bitumen_block", () -> new SoulSandBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLACK).sound(SoundType.HONEY_BLOCK).strength(0.5F,0.5F).speedFactor(0.4F)));
+
+    //Functional Blocks
+    public static final DeferredBlock<Block> MAKESHIFT_TORCH = BLOCKS.register("makeshift_torch", () -> new TorchBlock(ParticleTypes.FLAME, BlockBehaviour.Properties.of().mapColor(MapColor.FIRE).sound(SoundType.NETHER_WOOD).instabreak().pushReaction(PushReaction.DESTROY).lightLevel((level) -> {return 12;}).noCollission().noOcclusion()));
+    public static final DeferredBlock<Block> WALL_MAKESHIFT_TORCH = BLOCKS.register("makeshift_wall_torch", () -> new WallTorchBlock(ParticleTypes.FLAME, BlockBehaviour.Properties.of().mapColor(MapColor.FIRE).sound(SoundType.NETHER_WOOD).instabreak().pushReaction(PushReaction.DESTROY).lightLevel((level) -> {return 12;}).noCollission().noOcclusion()));
+    public static final DeferredBlock<Block> PARCHED_DOOR = BLOCKS.register("parched_door", () -> new DoorBlock(BlockSetType.CRIMSON, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).strength(2.5F,3.5F).noOcclusion()));
+    public static final DeferredBlock<Block> FERROUS_ALLOY_DOOR = BLOCKS.register("ferrous_alloy_door", () -> new DoorBlock(NWBlockSetTypes.FERROUS, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).sound(SoundType.HEAVY_CORE).strength(5F,6F).requiresCorrectToolForDrops().noOcclusion()));
+
+    //BlockItems
+
+    //Natural Blocks
+    public static final DeferredItem<BlockItem> PARCHED_LOG_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("parched_log", PARCHED_LOG);
+    public static final DeferredItem<BlockItem> DUST_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("dust_block", DUST_BLOCK);
+    public static final DeferredItem<BlockItem> DUSTY_BITUMEN_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("dusty_bitumen", DUSTY_BITUMEN);
+    public static final DeferredItem<BlockItem> PACKED_DUST_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("packed_dust_block", PACKED_DUST_BLOCK);
+    public static final DeferredItem<BlockItem> SALT_CRUST_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("salt_crust", SALT_CRUST);
+    public static final DeferredItem<BlockItem> DUSTSTONE_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("duststone", DUSTSTONE);
+
+    //Building Blocks
+    public static final DeferredItem<BlockItem> STRIPPED_PARCHED_LOG_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("stripped_parched_log", STRIPPED_PARCHED_LOG);
+    public static final DeferredItem<BlockItem> PARCHED_PLANKS_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("parched_planks", PARCHED_PLANKS);
+    public static final DeferredItem<BlockItem> DUSTSTONE_BRICKS_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("duststone_bricks", DUSTSTONE_BRICKS);
+    public static final DeferredItem<BlockItem> COBBLED_DUSTSTONE_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("cobbled_duststone", COBBLED_DUSTSTONE);
+
+    //Resources
+    public static final DeferredItem<BlockItem> FERROUS_SCRAP_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("ferrous_scrap_block", FERROUS_SCRAP_BLOCK);
+    public static final DeferredItem<BlockItem> FERROUS_ALLOY_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("ferrous_alloy_block", FERROUS_ALLOY_BLOCK);
+    public static final DeferredItem<BlockItem> BITUMEN_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("bitumen_block", BITUMEN_BLOCK);
+
+    //Functional Blocks
+    public static final DeferredItem<BlockItem> PARCHED_DOOR_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("parched_door", PARCHED_DOOR);
+    public static final DeferredItem<BlockItem> FERROUS_ALLOY_DOOR_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("ferrous_alloy_door", FERROUS_ALLOY_DOOR);
+    public static final DeferredItem<BlockItem> MAKESHIFT_TORCH_ITEM = NWItems.ITEM_REGISTRIES.register("makeshift_torch", (torch) -> new StandingAndWallBlockItem(MAKESHIFT_TORCH.get(), WALL_MAKESHIFT_TORCH.get(), new Item.Properties(), Direction.DOWN));
+
+}

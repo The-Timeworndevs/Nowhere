@@ -1,4 +1,4 @@
-package net.tws.nowhere.common.blocks;
+package net.tws.nowhere.common.blocks.tags;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -8,8 +8,7 @@ import net.tws.nowhere.NWMain;
 
 public final class NowhereBlockTags {
 
-    public static final TagKey<Block> INCORRECT_FOR_SCRAP_TOOLS = create("incorrect_for_scrap_tools");
-    public static final TagKey<Block> INCORRECT_FOR_FERROUS_ALLOY_TOOLS = create("incorrect_for_ferrous_alloy_tools");
+    public static final TagKey<Block> NOWHERE_SOILS = create("nowhere_soils");
 
     public NowhereBlockTags() {
 

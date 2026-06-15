@@ -1,0 +1,26 @@
+{
+  "name": "Where are we?",
+  "description": "",
+  "icon": {
+    "item": "nowhere:dust_block"
+  },
+  "category": "a_journey_s_beginning",
+  "x": 0,
+  "y": 0,
+  "sort_number": 0,
+  "background_u_index": 0,
+  "background_v_index": 0,
+  "hide_while_locked": false,
+  "show_when_any_parent_unlocked": false,
+  "pages": [
+    {
+      "type": "modonomicon:text",
+      "title": "Where are we??",
+      "text": "Simple: You're  Nowhere, no I don't mean lost in a standard sense, you are quite literally in Nowhere, also known as The Plane of the Lost. It is a dry, nearly lifeless world stalked by undead. How did we get here? No idea, you could have come here willingly, or just happened to be (un)lucky to get here. I recommend you find some parched trees to punch down.",
+      "anchor": "",
+      "condition": {
+        "type": "modonomicon:none"
+      }
+    }
+  ]
+}

@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
-    "nowhere:duststone"
+    "nowhere:duststone",
+    "nowhere:duststone_bricks",
+    "nowhere:ferrous_scrap_block",
+    "nowhere:ferrous_alloy_block",
+    "nowhere:ferrous_alloy_door",
+    "nowhere:salt_crust"
   ]
 }

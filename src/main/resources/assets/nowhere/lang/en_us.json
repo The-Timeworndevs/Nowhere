@@ -5,6 +5,7 @@
   "itemGroup.nowhere.tools": "Nowhere Tools",
   "itemGroup.nowhere.combat": "Nowhere Combat",
   "itemGroup.nowhere.materials": "Nowhere Materials",
+  "itemGroup.nowhere.misc": "Nowhere Misc",
 
   "block.nowhere.parched_log": "Parched Log",
   "block.nowhere.stripped_parched_log": "Stripped Parched Log",
@@ -14,6 +15,7 @@
   "block.nowhere.dusty_bitumen": "Dusty Bitumen",
   "block.nowhere.packed_dust_block": "Packed Dust Block",
   "block.nowhere.duststone": "Duststone",
+  "block.nowhere.cobbled_duststone": "Cobbled Duststone",
   "block.nowhere.duststone_bricks": "Duststone Bricks",
   "block.nowhere.ferrous_alloy_block": "Block Of Ferrous Alloy",
   "block.nowhere.ferrous_alloy_door": "Ferrous Alloy Door",
@@ -25,15 +27,36 @@
 
   "item.nowhere.ferrous_alloy_ingot": "Ferrous Alloy Ingot",
   "item.nowhere.ferrous_scrap": "Ferrous Scrap",
+  "item.nowhere.ferrous_alloy_nugget": "Ferrous Alloy Nugget",
+  "item.nowhere.bitumen_ball": "Bitumen Ball",
+  "item.nowhere.salt_pile": "Salt Pile",
+  "item.nowhere.dusty_journal": "Dusty Journal",
+
+  "item.nowhere.parched_wooden_sword": "Parched Wooden Sword",
+  "item.nowhere.parched_wooden_shovel": "Parched Wooden Shovel",
+  "item.nowhere.parched_wooden_pickaxe": "Parched Wooden Pickaxe",
+  "item.nowhere.parched_wooden_axe": "Parched Wooden Axe",
+  "item.nowhere.parched_wooden_hoe": "Parched Wooden Hoe",
+
   "item.nowhere.scrap_sword": "Scrap Sword",
   "item.nowhere.scrap_shovel": "Scrap Shovel",
   "item.nowhere.scrap_pickaxe": "Scrap Pickaxe",
   "item.nowhere.scrap_axe": "Scrap Axe",
   "item.nowhere.scrap_hoe": "Scrap Hoe",
-  "item.nowhere.ferrous_alloy_nugget": "Ferrous Alloy Nugget",
-  "item.nowhere.bitumen_ball": "Bitumen Ball",
-  "item.nowhere.salt_pile": "Salt Pile",
+
+  "item.nowhere.ferrous_alloy_sword": "Ferrous Alloy Sword",
+  "item.nowhere.ferrous_alloy_shovel": "Ferrous Alloy Shovel",
+  "item.nowhere.ferrous_alloy_pickaxe": "Ferrous Alloy Pickaxe",
+  "item.nowhere.ferrous_alloy_axe": "Ferrous Alloy Axe",
+  "item.nowhere.ferrous_alloy_hoe": "Ferrous Alloy Hoe",
+
+  "advancement.nowhere_story.root.title": "Nowhere Story",
+  "advancement.nowhere_story.root.description": "The story of an (un)lucky player thrown into this blasted plane",
 
   "biome.nowhere.dunes": "[Nowhere] Dunes",
-  "biome.nowhere.salt_flats": "[Nowhere] Salt Flats"
+  "biome.nowhere.salt_flats": "[Nowhere] Salt Flats",
+  "biome.nowhere.parched_forest": "[Nowhere] Parched Forest",
+
+  "book.nowhere.journal.name": "Dusty Journal",
+  "book.nowhere.journal.tooltip": "A survivalist's journal, your guide to this desert wasteland..."
 }

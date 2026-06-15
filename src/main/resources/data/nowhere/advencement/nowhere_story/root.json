@@ -1,0 +1,35 @@
+{
+  "criteria": {
+    "inventory_changed": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nowhere:parched_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "nowhere:textures/block/dust_block",
+    "description": {
+      "translate": "advancements.nowhere_story.root.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "nowhere:parched_log"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.nowhere_story.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "inventory_changed"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

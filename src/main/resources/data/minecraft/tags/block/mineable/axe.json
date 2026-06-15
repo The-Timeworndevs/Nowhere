@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "nowhere:parched_log",
+    "nowhere:stripped_parched_log",
+    "nowhere:parched_planks",
+    "nowhere:parched_door"
+  ]
+}

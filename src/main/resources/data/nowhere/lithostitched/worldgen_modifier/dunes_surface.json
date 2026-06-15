@@ -4,7 +4,7 @@
     "minecraft:overworld"
   ],
   "surface_rule": {
-  "type": "minecraft:condition",
+    "type": "minecraft:condition",
     "if_true": {
       "type": "minecraft:above_preliminary_surface"
     },
@@ -28,20 +28,41 @@
                   ]
                 },
                 "then_run": {
-                  "type": "minecraft:condition",
-                  "if_true": {
-                    "type": "minecraft:stone_depth",
-                    "offset": 6,
-                    "surface_type": "floor",
-                    "add_surface_depth": true,
-                    "secondary_depth_range": 6
-                  },
-                  "then_run": {
-                    "type": "minecraft:block",
-                    "result_state": {
-                      "Name": "nowhere:dust_block"
+                  "type":"minecraft:sequence",
+                  "sequence": [
+                    {
+                      "type": "minecraft:condition",
+                      "if_true": {
+                        "type": "minecraft:stone_depth",
+                        "offset": 3,
+                        "surface_type": "floor",
+                        "add_surface_depth": true,
+                        "secondary_depth_range": 3
+                      },
+                      "then_run": {
+                        "type": "minecraft:block",
+                        "result_state": {
+                          "Name": "nowhere:dust_block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "minecraft:condition",
+                      "if_true": {
+                        "type": "minecraft:stone_depth",
+                        "offset": 6,
+                        "surface_type": "floor",
+                        "add_surface_depth": true,
+                        "secondary_depth_range": 6
+                      },
+                      "then_run": {
+                        "type": "minecraft:block",
+                        "result_state": {
+                          "Name": "nowhere:packed_dust_block"
+                        }
+                      }
                     }
-                  }
+                  ]
                 }
               }
             ]

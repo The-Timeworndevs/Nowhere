@@ -21,7 +21,7 @@
           "parameters": {
             "temperature": 0,
             "humidity": 0,
-            "continentalness": 0.64,
+            "continentalness": 0.67,
             "erosion": 0,
             "weirdness": 0,
             "depth": 0,
@@ -32,8 +32,8 @@
           "biome": "nowhere:parched_forest",
           "parameters": {
             "temperature": 0,
-            "humidity": 0.5,
-            "continentalness": 0.64,
+            "humidity": 0.7,
+            "continentalness": 0.7,
             "erosion": 0,
             "weirdness": 0,
             "depth": 0,

@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "nowhere:dust_block"
+    "nowhere:dust_block",
+    "nowhere:packed_dust_block",
+    "nowhere:dusty_bitumen"
   ]
 }
