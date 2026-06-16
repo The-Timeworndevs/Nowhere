@@ -50,8 +50,8 @@
   "item.nowhere.ferrous_alloy_axe": "Ferrous Alloy Axe",
   "item.nowhere.ferrous_alloy_hoe": "Ferrous Alloy Hoe",
 
-  "advancement.nowhere_story.root.title": "Nowhere Story",
-  "advancement.nowhere_story.root.description": "The story of an (un)lucky player thrown into this blasted plane",
+  "advancements.nowhere_story.root.title": "Nowhere Story",
+  "advancements.nowhere_story.root.description": "The story of an (un)lucky player thrown into this blasted plane",
 
   "biome.nowhere.dunes": "[Nowhere] Dunes",
   "biome.nowhere.salt_flats": "[Nowhere] Salt Flats",

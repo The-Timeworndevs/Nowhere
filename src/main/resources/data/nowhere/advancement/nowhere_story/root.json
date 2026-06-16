@@ -13,7 +13,7 @@
   },
   "display": {
     "announce_to_chat": false,
-    "background": "nowhere:textures/block/dust_block.png",
+    "background": "nowhere:textures/gui/advancements/backgrounds/nowhere_story.png",
     "description": {
       "translate": "advancements.nowhere_story.root.description"
     },
