@@ -14,5 +14,9 @@
   "background_texture_zoom_multiplier": 1,
   "entry_textures": "modonomicon:textures/gui/entry_textures.png",
   "show_category_button": true,
-  "description": ""
+  "description": "",
+  "condition": {
+    "type": "modonomicon:advancement",
+    "advancement_id": "nowhere:parched_log"
+  }
 }

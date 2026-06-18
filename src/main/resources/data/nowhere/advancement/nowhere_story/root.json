@@ -1,14 +1,7 @@
 {
   "criteria": {
-    "inventory_changed": {
-      "conditions": {
-        "items": [
-          {
-            "items": "nowhere:parched_log"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
+    "tick": {
+      "trigger": "minecraft:tick"
     }
   },
   "display": {
@@ -19,7 +12,7 @@
     },
     "icon": {
       "count": 1,
-      "id": "nowhere:parched_log"
+      "id": "nowhere:dust_block"
     },
     "show_toast": false,
     "title": {
@@ -28,7 +21,7 @@
   },
   "requirements": [
     [
-      "inventory_changed"
+      "tick"
     ]
   ],
   "sends_telemetry_event": true

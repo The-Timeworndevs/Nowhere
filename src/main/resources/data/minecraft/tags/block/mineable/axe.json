@@ -2,8 +2,17 @@
   "replace": false,
   "values": [
     "nowhere:parched_log",
+    "nowhere:parched_wood",
     "nowhere:stripped_parched_log",
+    "nowhere:stripped_parched_wood",
     "nowhere:parched_planks",
-    "nowhere:parched_door"
+    "nowhere:parched_stairs",
+    "nowhere:parched_slab",
+    "nowhere:parched_fence",
+    "nowhere:parched_fence_gate",
+    "nowhere:parched_door",
+    "nowhere:parched_trapdoor",
+    "nowhere:parched_pressure_plate",
+    "nowhere:parched_button"
   ]
 }

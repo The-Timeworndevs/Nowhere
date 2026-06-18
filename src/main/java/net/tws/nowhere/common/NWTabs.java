@@ -16,14 +16,28 @@ public class NWTabs {
             .title(Component.translatable("itemGroup.nowhere.blocks"))
             .icon(() -> NWBlocks.DUSTSTONE_BRICKS_ITEM.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
+
+                //Parched Set
                 output.accept(NWBlocks.PARCHED_LOG_ITEM.get());
+                output.accept(NWBlocks.PARCHED_WOOD_ITEM.get());
                 output.accept(NWBlocks.STRIPPED_PARCHED_LOG_ITEM.get());
+                output.accept(NWBlocks.STRIPPED_PARCHED_WOOD_ITEM.get());
                 output.accept(NWBlocks.PARCHED_PLANKS_ITEM.get());
+                output.accept(NWBlocks.PARCHED_STAIRS_ITEM.get());
+                output.accept(NWBlocks.PARCHED_SLAB_ITEM.get());
+                output.accept(NWBlocks.PARCHED_FENCE_ITEM.get());
+                output.accept(NWBlocks.PARCHED_FENCE_GATE_ITEM.get());
+                output.accept(NWBlocks.PARCHED_DOOR_ITEM.get());
+                output.accept(NWBlocks.PARCHED_TRAPDOOR_ITEM.get());
+                output.accept(NWBlocks.PARCHED_PRESSURE_PLATE_ITEM.get());
+                output.accept(NWBlocks.PARCHED_BUTTON_ITEM.get());
+
                 output.accept(NWBlocks.DUSTSTONE_ITEM.get());
                 output.accept(NWBlocks.COBBLED_DUSTSTONE_ITEM.get());
                 output.accept(NWBlocks.DUSTSTONE_BRICKS_ITEM.get());
-                output.accept(NWBlocks.FERROUS_SCRAP_ITEM.get());
-                output.accept(NWBlocks.FERROUS_ALLOY_ITEM.get());
+                output.accept(NWBlocks.FERROUS_SCRAP_BLOCK_ITEM.get());
+                output.accept(NWBlocks.FERROUS_ALLOY_BLOCK_ITEM.get());
+                output.accept(NWBlocks.FERROUS_ALLOY_DOOR_ITEM.get());
             }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_NATURAL_TAB = GROUP_REGISTRIES.register("nowhere_natural_blocks", () -> CreativeModeTab.builder()
@@ -31,9 +45,10 @@ public class NWTabs {
             .icon(() -> NWBlocks.DUST_ITEM.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 output.accept(NWBlocks.DUST_ITEM.get());
+                output.accept(NWBlocks.PACKED_DUST_ITEM.get());
+                output.accept(NWBlocks.DUSTSTONE_ITEM.get());
                 output.accept(NWBlocks.DUSTY_BITUMEN_ITEM.get());
                 output.accept(NWBlocks.BITUMEN_ITEM.get());
-                output.accept(NWBlocks.PACKED_DUST_ITEM.get());
                 output.accept(NWBlocks.SALT_CRUST_ITEM.get());
             }).build());
 
@@ -42,8 +57,6 @@ public class NWTabs {
             .icon(() -> NWBlocks.MAKESHIFT_TORCH_ITEM.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 output.accept(NWBlocks.MAKESHIFT_TORCH_ITEM.get());
-                output.accept(NWBlocks.PARCHED_DOOR_ITEM.get());
-                output.accept(NWBlocks.FERROUS_ALLOY_DOOR_ITEM);
             }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_TOOLS_TAB = GROUP_REGISTRIES.register("nowhere_tools", () -> CreativeModeTab.builder()

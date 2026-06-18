@@ -7,10 +7,6 @@
   "itemGroup.nowhere.materials": "Nowhere Materials",
   "itemGroup.nowhere.misc": "Nowhere Misc",
 
-  "block.nowhere.parched_log": "Parched Log",
-  "block.nowhere.stripped_parched_log": "Stripped Parched Log",
-  "block.nowhere.parched_planks": "Parched Planks",
-  "block.nowhere.parched_door": "Parched Door",
   "block.nowhere.dust_block": "Dust Block",
   "block.nowhere.dusty_bitumen": "Dusty Bitumen",
   "block.nowhere.packed_dust_block": "Packed Dust Block",
@@ -24,6 +20,21 @@
   "block.nowhere.bitumen_block": "Block of Bitumen",
   "block.nowhere.makeshift_torch": "Makeshift Torch",
   "block.nowhere.makeshift_wall_torch": "Makeshift Wall Torch",
+
+
+  "block.nowhere.parched_log": "Parched Log",
+  "block.nowhere.parched_wood": "Parched Wood",
+  "block.nowhere.stripped_parched_log": "Stripped Parched Log",
+  "block.nowhere.stripped_parched_wood": "Stripped Parched Wood",
+  "block.nowhere.parched_planks": "Parched Planks",
+  "block.nowhere.parched_stairs": "Parched Stairs",
+  "block.nowhere.parched_slab": "Parched Slab",
+  "block.nowhere.parched_fence": "Parched Fence",
+  "block.nowhere.parched_fence_gate": "Parched Fence Gate",
+  "block.nowhere.parched_door": "Parched Door",
+  "block.nowhere.parched_trapdoor": "Parched Trapdoor",
+  "block.nowhere.parched_pressure_plate": "Parched Pressure Plate",
+  "block.nowhere.parched_button": "Parched Button",
 
   "item.nowhere.ferrous_alloy_ingot": "Ferrous Alloy Ingot",
   "item.nowhere.ferrous_scrap": "Ferrous Scrap",
@@ -52,6 +63,8 @@
 
   "advancements.nowhere_story.root.title": "Nowhere Story",
   "advancements.nowhere_story.root.description": "The story of an (un)lucky player thrown into this blasted plane",
+  "advancements.nowhere_story.mine_wood.title": "Ouch, splinters!",
+  "advancements.nowhere_story.mine_wood.description": "Punch down a Parched Tree, the remnants of something livelier",
 
   "biome.nowhere.dunes": "[Nowhere] Dunes",
   "biome.nowhere.salt_flats": "[Nowhere] Salt Flats",

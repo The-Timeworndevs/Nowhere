@@ -6,7 +6,7 @@
   },
   "category": "a_journey_s_beginning",
   "x": 0,
-  "y": 3,
+  "y": 2,
   "sort_number": 0,
   "background_u_index": 0,
   "background_v_index": 0,
@@ -15,14 +15,18 @@
   "pages": [
     {
       "type": "modonomicon:text",
-      "title": "You may have noticed the trees are not quite the same as home.",
-      "text": "Long story, but not relevant now. All the trees are dead, no leaves, no saplings, etc... Due to a long time sitting in the harsh sunslight and dry weather, the tress are slightly harder than usual, it'll take longer to break, but tools made from it last longer. \n\n(Developer note! It can be used akin to vanilla woods, but note something, the various items you craft often aren't vanilla items, rather they exist as a parallel of said items, readapted to fit the design and narrative of Nowhere.)",
+      "title": "Dead Trees",
+      "text": "Long story, but not relevant now. All the trees are dead, no leaves, no saplings, etc... Due to a long time sitting in the harsh sunslight and dry weather, the tress are slightly harder than usual, it'll take longer to break, but tools made from it last longer.\n\n(Developer note! It can be used akin to vanilla woods, but note something, the various items you craft often aren't vanilla items, rather they exist as a parallel of said items, readapted to fit the design and narrative of Nowhere.)",
       "anchor": "",
       "condition": {
         "type": "modonomicon:none"
       }
     }
   ],
+  "condition": {
+    "type": "modonomicon:advancement",
+    "advancement_id": "nowhere:nowhere_story/wood"
+  },
   "parents": [
     {
       "entry": "a_journey_s_beginning/where_are_we",

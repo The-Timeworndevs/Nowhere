@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "nowhere:block/parched_slab"
+    },
+    "type=double": {
+      "model": "nowhere:block/parched_planks"
+    },
+    "type=top": {
+      "model": "nowhere:block/parched_slab_top"
+    }
+  }
+}

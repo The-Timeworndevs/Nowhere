@@ -1,6 +1,7 @@
 {
+  "parent": "nowhere:nowhere_story/root",
   "criteria": {
-    "inventory_changed": {
+    "get_wood": {
       "conditions": {
         "items": [
           {
@@ -12,23 +13,20 @@
     }
   },
   "display": {
-    "announce_to_chat": false,
-    "background": "nowhere:textures/block/dust_block.png",
     "description": {
-      "translate": "advancements.nowhere_story.root.description"
+      "translate": "advancements.nowhere_story.mine_wood.description"
     },
     "icon": {
       "count": 1,
-      "id": "nowhere:parched_log"
+      "id": "nowhere:parched_wooden_axe"
     },
-    "show_toast": false,
     "title": {
-      "translate": "advancements.nowhere_story.root.title"
+      "translate": "advancements.nowhere_story.mine_wood.title"
     }
   },
   "requirements": [
     [
-      "inventory_changed"
+      "get_wood"
     ]
   ],
   "sends_telemetry_event": true
