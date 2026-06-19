@@ -17,6 +17,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.tws.nowhere.common.blocks.NWBlockSetTypes;
+import net.tws.nowhere.common.blocks.NWWoodTypes;
 
 public class NWBlocks {
 
@@ -51,11 +52,11 @@ public class NWBlocks {
     public static final DeferredBlock<Block> PARCHED_STAIRS = BLOCKS.register("parched_stairs", ()-> new StairBlock(PARCHED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).strength(2.5F, 3.5F)));
     public static final DeferredBlock<Block> PARCHED_SLAB = BLOCKS.register("parched_slab", ()-> new SlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).strength(2.5F, 3.5F)));
     public static final DeferredBlock<Block> PARCHED_FENCE = BLOCKS.register("parched_fence", ()-> new FenceBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).strength(2.5F, 3.5F)));
-    public static final DeferredBlock<Block> PARCHED_FENCE_GATE = BLOCKS.register("parched_fence_gate", ()-> new FenceGateBlock(WoodType.CRIMSON, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).strength(2.5F, 3.5F)));
-    public static final DeferredBlock<Block> PARCHED_DOOR = BLOCKS.register("parched_door", () -> new DoorBlock(BlockSetType.CRIMSON, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).strength(2.5F,3.5F).noOcclusion()));
-    public static final DeferredBlock<Block> PARCHED_TRAPDOOR = BLOCKS.register("parched_trapdoor", () -> new TrapDoorBlock(BlockSetType.CRIMSON, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).strength(2.5F,3.5F).noOcclusion()));
-    public static final DeferredBlock<Block> PARCHED_PRESSURE_PLATE = BLOCKS.register("parched_pressure_plate", ()-> new PressurePlateBlock(BlockSetType.CRIMSON, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).strength(0.5F).pushReaction(PushReaction.DESTROY)));
-    public static final DeferredBlock<Block> PARCHED_BUTTON = BLOCKS.register("parched_button", ()-> new ButtonBlock(BlockSetType.CRIMSON, 30, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> PARCHED_FENCE_GATE = BLOCKS.register("parched_fence_gate", ()-> new FenceGateBlock(NWWoodTypes.PARCHED, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).strength(2.5F, 3.5F)));
+    public static final DeferredBlock<Block> PARCHED_DOOR = BLOCKS.register("parched_door", () -> new DoorBlock(NWBlockSetTypes.PARCHED, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).strength(2.5F,3.5F).noOcclusion()));
+    public static final DeferredBlock<Block> PARCHED_TRAPDOOR = BLOCKS.register("parched_trapdoor", () -> new TrapDoorBlock(NWBlockSetTypes.PARCHED, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).strength(2.5F,3.5F).noOcclusion()));
+    public static final DeferredBlock<Block> PARCHED_PRESSURE_PLATE = BLOCKS.register("parched_pressure_plate", ()-> new PressurePlateBlock(NWBlockSetTypes.PARCHED, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> PARCHED_BUTTON = BLOCKS.register("parched_button", ()-> new ButtonBlock(NWBlockSetTypes.PARCHED, 30, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).strength(0.5F).pushReaction(PushReaction.DESTROY)));
 
     public static final DeferredBlock<Block> COBBLED_DUSTSTONE = BLOCKS.registerSimpleBlock("cobbled_duststone", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.DRIPSTONE_BLOCK).strength(0.8F,0.8F).requiresCorrectToolForDrops());
     public static final DeferredBlock<Block> DUSTSTONE_BRICKS = BLOCKS.registerSimpleBlock("duststone_bricks", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.DRIPSTONE_BLOCK).strength(0.8F,0.8F).requiresCorrectToolForDrops());
@@ -72,10 +73,10 @@ public class NWBlocks {
     public static final DeferredBlock<Block> WALL_MAKESHIFT_TORCH = BLOCKS.register("makeshift_wall_torch", () -> new WallTorchBlock(ParticleTypes.FLAME, BlockBehaviour.Properties.of().mapColor(MapColor.FIRE).sound(SoundType.NETHER_WOOD).instabreak().pushReaction(PushReaction.DESTROY).lightLevel((level) -> {return 12;}).noCollission().noOcclusion()));
     public static final DeferredBlock<Block> FERROUS_ALLOY_DOOR = BLOCKS.register("ferrous_alloy_door", () -> new DoorBlock(NWBlockSetTypes.FERROUS, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).sound(SoundType.HEAVY_CORE).strength(5F,6F).requiresCorrectToolForDrops().noOcclusion()));
 
-    public static final DeferredBlock<Block> PARCHED_SIGN = BLOCKS.register("parched_sign", ()-> new StandingSignBlock(WoodType.CRIMSON, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).forceSolidOn().noCollission().strength(1.0F)));
-    public static final DeferredBlock<Block> WALL_PARCHED_SIGN = BLOCKS.register("wall_parched_sign", ()-> new WallSignBlock(WoodType.CRIMSON, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).forceSolidOn().noCollission().strength(1.0F)));
-    public static final DeferredBlock<Block> PARCHED_HANGING_SIGN = BLOCKS.register("parched_hanging_sign", ()-> new CeilingHangingSignBlock(WoodType.CRIMSON, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).forceSolidOn().noCollission().strength(1.0F)));
-    public static final DeferredBlock<Block> WALL_PARCHED_HANGING_SIGN = BLOCKS.register("wall_parched_hanging_sign", ()-> new WallHangingSignBlock(WoodType.CRIMSON, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).forceSolidOn().noCollission().strength(1.0F)));
+    public static final DeferredBlock<Block> PARCHED_SIGN = BLOCKS.register("parched_sign", ()-> new StandingSignBlock(NWWoodTypes.PARCHED, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).forceSolidOn().noCollission().strength(1.0F)));
+    public static final DeferredBlock<Block> WALL_PARCHED_SIGN = BLOCKS.register("wall_parched_sign", ()-> new WallSignBlock(NWWoodTypes.PARCHED, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).forceSolidOn().noCollission().strength(1.0F)));
+    public static final DeferredBlock<Block> PARCHED_HANGING_SIGN = BLOCKS.register("parched_hanging_sign", ()-> new CeilingHangingSignBlock(NWWoodTypes.PARCHED, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).forceSolidOn().noCollission().strength(1.0F)));
+    public static final DeferredBlock<Block> WALL_PARCHED_HANGING_SIGN = BLOCKS.register("wall_parched_hanging_sign", ()-> new WallHangingSignBlock(NWWoodTypes.PARCHED, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).forceSolidOn().noCollission().strength(1.0F)));
 
     //BlockItems
 
