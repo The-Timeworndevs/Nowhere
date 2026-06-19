@@ -26,6 +26,8 @@ public class NWMain {
 
         NWBlocks.BLOCKS.register(modEventBus);
 
+        NWBlocks.setupBlockEntities();
+
         NWItems.ITEM_REGISTRIES.register(modEventBus);
 
         NWTabs.GROUP_REGISTRIES.register(modEventBus);

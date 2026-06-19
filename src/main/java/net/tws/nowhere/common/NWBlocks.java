@@ -23,7 +23,7 @@ public class NWBlocks {
     //Registry
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(NWMain.MODID);
 
-    private void setupBlockEntities(BlockEntityTypeAddBlocksEvent event) {
+    public static void setupBlockEntities(BlockEntityTypeAddBlocksEvent event) {
         event.modify(BlockEntityType.SIGN, PARCHED_SIGN.get());
         event.modify(BlockEntityType.SIGN, WALL_PARCHED_SIGN.get());
         event.modify(BlockEntityType.HANGING_SIGN, PARCHED_HANGING_SIGN.get());
