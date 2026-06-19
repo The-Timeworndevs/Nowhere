@@ -13,6 +13,10 @@
     "nowhere:parched_door",
     "nowhere:parched_trapdoor",
     "nowhere:parched_pressure_plate",
-    "nowhere:parched_button"
+    "nowhere:parched_button",
+    "nowhere:parched_sign",
+    "nowhere:wall_parched_sign",
+    "nowhere:parched_hanging_sign",
+    "nowhere:wall_parched_hanging_sign"
   ]
 }

@@ -7,9 +7,9 @@
   "itemGroup.nowhere.materials": "Nowhere Materials",
   "itemGroup.nowhere.misc": "Nowhere Misc",
 
-  "block.nowhere.dust_block": "Dust Block",
+  "block.nowhere.dust_block": "Dust",
   "block.nowhere.dusty_bitumen": "Dusty Bitumen",
-  "block.nowhere.packed_dust_block": "Packed Dust Block",
+  "block.nowhere.packed_dust_block": "Packed Dust",
   "block.nowhere.duststone": "Duststone",
   "block.nowhere.cobbled_duststone": "Cobbled Duststone",
   "block.nowhere.duststone_bricks": "Duststone Bricks",
@@ -36,6 +36,11 @@
   "block.nowhere.parched_trapdoor": "Parched Trapdoor",
   "block.nowhere.parched_pressure_plate": "Parched Pressure Plate",
   "block.nowhere.parched_button": "Parched Button",
+
+  "block.nowhere.parched_sign": "Parched Sign",
+  "block.nowhere.wall_parched_sign": "Parched Sign",
+  "block.nowhere.parched_hanging_sign": "Parched Hanging Sign",
+  "block.nowhere.wall_parched_hanging_sign": "Parched Hanging Sign",
 
   "item.nowhere.ferrous_alloy_ingot": "Ferrous Alloy Ingot",
   "item.nowhere.ferrous_scrap": "Ferrous Scrap",
