@@ -38,6 +38,7 @@ public class NWTabs {
                 output.accept(NWBlocks.FERROUS_SCRAP_BLOCK_ITEM.get());
                 output.accept(NWBlocks.FERROUS_ALLOY_BLOCK_ITEM.get());
                 output.accept(NWBlocks.FERROUS_ALLOY_DOOR_ITEM.get());
+                output.accept(NWBlocks.FERROUS_ALLOY_CHAIN_ITEM.get());
             }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_NATURAL_TAB = GROUP_REGISTRIES.register("nowhere_natural_blocks", () -> CreativeModeTab.builder()
@@ -57,6 +58,8 @@ public class NWTabs {
             .icon(() -> NWBlocks.MAKESHIFT_TORCH_ITEM.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 output.accept(NWBlocks.MAKESHIFT_TORCH_ITEM.get());
+                output.accept(NWBlocks.PARCHED_SIGN_ITEM.get());
+                output.accept(NWBlocks.PARCHED_HANGING_SIGN_ITEM.get());
             }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_TOOLS_TAB = GROUP_REGISTRIES.register("nowhere_tools", () -> CreativeModeTab.builder()

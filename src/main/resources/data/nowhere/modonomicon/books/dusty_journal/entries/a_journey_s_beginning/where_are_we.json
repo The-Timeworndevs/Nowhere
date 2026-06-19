@@ -16,7 +16,7 @@
     {
       "type": "modonomicon:text",
       "title": "Lost",
-      "text": "Simple: You're  Nowhere. No I don't mean lost in a standard sense, you are quite literally Nowhere, a place sometimes titled as \"The Plane of the Lost\". It is a dry, nearly lifeless world stalked by undead. How did we get here? No idea, you could have come here willingly, or just happened to be (un)lucky to appear here. I recommend you find some trees to punch down.",
+      "text": "Simple: You're Nowhere. No I don't mean lost in a standard sense, you are quite literally Nowhere, a place sometimes titled as \"The Plane of the Lost\". It is a dry, nearly lifeless world stalked by undead. How did we get here? No idea, you could have come here willingly, or just happened to be (un)lucky to appear here. I recommend you find some trees to punch down.",
       "anchor": "",
       "condition": {
         "type": "modonomicon:none"

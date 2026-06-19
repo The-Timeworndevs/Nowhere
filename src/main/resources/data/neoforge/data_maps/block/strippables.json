@@ -2,6 +2,9 @@
   "values": {
     "nowhere:parched_log": {
       "stripped_block": "nowhere:stripped_parched_log"
+    },
+    "nowhere:parched_wood": {
+      "stripped_block": "nowhere:stripped_parched_wood"
     }
   }
 }

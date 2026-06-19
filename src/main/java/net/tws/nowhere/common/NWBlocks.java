@@ -3,14 +3,12 @@ package net.tws.nowhere.common;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.StandingAndWallBlockItem;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.PushReaction;
 import net.tws.nowhere.NWMain;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -52,6 +50,7 @@ public class NWBlocks {
 
     public static final DeferredBlock<Block> COBBLED_DUSTSTONE = BLOCKS.registerSimpleBlock("cobbled_duststone", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.DRIPSTONE_BLOCK).strength(0.8F,0.8F).requiresCorrectToolForDrops());
     public static final DeferredBlock<Block> DUSTSTONE_BRICKS = BLOCKS.registerSimpleBlock("duststone_bricks", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.DRIPSTONE_BLOCK).strength(0.8F,0.8F).requiresCorrectToolForDrops());
+    public static final DeferredBlock<Block> FERROUS_ALLOY_CHAIN = BLOCKS.register("ferrous_alloy_chain", ()-> new ChainBlock(BlockBehaviour.Properties.of().forceSolidOn().requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.CHAIN).noOcclusion()));
 
     //Resources
     public static final DeferredBlock<Block> FERROUS_SCRAP_BLOCK = BLOCKS.registerSimpleBlock("ferrous_scrap_block", BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.HEAVY_CORE).strength(5F,6F).requiresCorrectToolForDrops());
@@ -63,6 +62,11 @@ public class NWBlocks {
     public static final DeferredBlock<Block> MAKESHIFT_TORCH = BLOCKS.register("makeshift_torch", () -> new TorchBlock(ParticleTypes.FLAME, BlockBehaviour.Properties.of().mapColor(MapColor.FIRE).sound(SoundType.NETHER_WOOD).instabreak().pushReaction(PushReaction.DESTROY).lightLevel((level) -> {return 12;}).noCollission().noOcclusion()));
     public static final DeferredBlock<Block> WALL_MAKESHIFT_TORCH = BLOCKS.register("makeshift_wall_torch", () -> new WallTorchBlock(ParticleTypes.FLAME, BlockBehaviour.Properties.of().mapColor(MapColor.FIRE).sound(SoundType.NETHER_WOOD).instabreak().pushReaction(PushReaction.DESTROY).lightLevel((level) -> {return 12;}).noCollission().noOcclusion()));
     public static final DeferredBlock<Block> FERROUS_ALLOY_DOOR = BLOCKS.register("ferrous_alloy_door", () -> new DoorBlock(NWBlockSetTypes.FERROUS, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).sound(SoundType.HEAVY_CORE).strength(5F,6F).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final DeferredBlock<Block> PARCHED_SIGN = BLOCKS.register("parched_sign", ()-> new StandingSignBlock(WoodType.CRIMSON, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).forceSolidOn().noCollission().strength(1.0F)));
+    public static final DeferredBlock<Block> WALL_PARCHED_SIGN = BLOCKS.register("wall_parched_sign", ()-> new WallSignBlock(WoodType.CRIMSON, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).forceSolidOn().noCollission().strength(1.0F)));
+    public static final DeferredBlock<Block> PARCHED_HANGING_SIGN = BLOCKS.register("parched_hanging_sign", ()-> new CeilingHangingSignBlock(WoodType.CRIMSON, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).forceSolidOn().noCollission().strength(1.0F)));
+    public static final DeferredBlock<Block> WALL_PARCHED_HANGING_SIGN = BLOCKS.register("wall_parched_hanging_sign", ()-> new WallHangingSignBlock(WoodType.CRIMSON, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).forceSolidOn().noCollission().strength(1.0F)));
 
     //BlockItems
 
@@ -90,6 +94,7 @@ public class NWBlocks {
 
     public static final DeferredItem<BlockItem> DUSTSTONE_BRICKS_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("duststone_bricks", DUSTSTONE_BRICKS);
     public static final DeferredItem<BlockItem> COBBLED_DUSTSTONE_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("cobbled_duststone", COBBLED_DUSTSTONE);
+    public static final DeferredItem<BlockItem> FERROUS_ALLOY_CHAIN_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("ferrous_alloy_chain", FERROUS_ALLOY_CHAIN);
 
     //Resources
     public static final DeferredItem<BlockItem> FERROUS_SCRAP_BLOCK_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("ferrous_scrap_block", FERROUS_SCRAP_BLOCK);
@@ -101,5 +106,8 @@ public class NWBlocks {
     public static final DeferredItem<BlockItem> PARCHED_TRAPDOOR_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("parched_trapdoor", PARCHED_TRAPDOOR);
     public static final DeferredItem<BlockItem> FERROUS_ALLOY_DOOR_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("ferrous_alloy_door", FERROUS_ALLOY_DOOR);
     public static final DeferredItem<BlockItem> MAKESHIFT_TORCH_ITEM = NWItems.ITEM_REGISTRIES.register("makeshift_torch", (torch) -> new StandingAndWallBlockItem(MAKESHIFT_TORCH.get(), WALL_MAKESHIFT_TORCH.get(), new Item.Properties(), Direction.DOWN));
+
+    public static final DeferredItem<BlockItem> PARCHED_SIGN_ITEM = NWItems.ITEM_REGISTRIES.register("parched_sign", (sign) -> new SignItem(new Item.Properties(), PARCHED_SIGN.get(), WALL_PARCHED_SIGN.get()));
+    public static final DeferredItem<BlockItem> PARCHED_HANGING_SIGN_ITEM = NWItems.ITEM_REGISTRIES.register("parched_hanging_sign", (hangingSign) -> new HangingSignItem(PARCHED_HANGING_SIGN.get(), WALL_PARCHED_HANGING_SIGN.get(), new Item.Properties()));
 
 }
