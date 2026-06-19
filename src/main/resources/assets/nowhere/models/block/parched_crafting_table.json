@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "nowhere:block/parched_planks",
+    "east": "nowhere:block/parched_crafting_table_side",
+    "north": "nowhere:block/parched_crafting_table_front",
+    "particle": "nowhere:block/parched_crafting_table_front",
+    "south": "nowhere:block/parched_crafting_table_side",
+    "up": "nowhere:block/parched_crafting_table_top",
+    "west": "nowhere:block/parched_crafting_table_front"
+  }
+}

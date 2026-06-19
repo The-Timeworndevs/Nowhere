@@ -6,10 +6,7 @@ import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntityType;
-import net.minecraft.world.level.block.state.properties.BlockSetType;
-import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.PushReaction;
-import net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent;
 import net.tws.nowhere.NWMain;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
@@ -18,18 +15,13 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.tws.nowhere.common.blocks.NWBlockSetTypes;
 import net.tws.nowhere.common.blocks.NWWoodTypes;
+import net.tws.nowhere.common.blocks.ParchedCraftingTableBlock;
 
 public class NWBlocks {
 
     //Registry
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(NWMain.MODID);
 
-    public static void setupBlockEntities(BlockEntityTypeAddBlocksEvent event) {
-        event.modify(BlockEntityType.SIGN, PARCHED_SIGN.get());
-        event.modify(BlockEntityType.SIGN, WALL_PARCHED_SIGN.get());
-        event.modify(BlockEntityType.HANGING_SIGN, PARCHED_HANGING_SIGN.get());
-        event.modify(BlockEntityType.HANGING_SIGN, WALL_PARCHED_HANGING_SIGN.get());
-    }
 
     //Blocks
     //Natural Blocks
@@ -43,6 +35,8 @@ public class NWBlocks {
     public static final DeferredBlock<Block> PACKED_DUST_BLOCK = BLOCKS.registerSimpleBlock("packed_dust_block", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.SOUL_SOIL).strength(0.5F,0.5F));
     public static final DeferredBlock<Block> DUSTY_BITUMEN = BLOCKS.registerSimpleBlock("dusty_bitumen", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.SOUL_SOIL).strength(0.5F,0.5F));
     public static final DeferredBlock<Block> DUSTSTONE = BLOCKS.registerSimpleBlock("duststone", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.DRIPSTONE_BLOCK).strength(0.8F,0.8F).requiresCorrectToolForDrops());
+
+    public static final DeferredBlock<Block> FERROUS_SCRAP_HEAP = BLOCKS.registerSimpleBlock("ferrous_scrap_heap", BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.ANCIENT_DEBRIS).strength(5F,6F).requiresCorrectToolForDrops());
 
     //Building Blocks
     public static final DeferredBlock<Block> PARCHED_WOOD = BLOCKS.register("parched_wood", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.STEM).strength(2.5F, 3.5F)));
@@ -78,6 +72,8 @@ public class NWBlocks {
     public static final DeferredBlock<Block> PARCHED_HANGING_SIGN = BLOCKS.register("parched_hanging_sign", ()-> new CeilingHangingSignBlock(NWWoodTypes.PARCHED, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).forceSolidOn().noCollission().strength(1.0F)));
     public static final DeferredBlock<Block> WALL_PARCHED_HANGING_SIGN = BLOCKS.register("wall_parched_hanging_sign", ()-> new WallHangingSignBlock(NWWoodTypes.PARCHED, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).forceSolidOn().noCollission().strength(1.0F)));
 
+    public static final DeferredBlock<Block> PARCHED_CRAFTING_TABLE = BLOCKS.register("parched_crafting_table", ()-> new ParchedCraftingTableBlock(BlockBehaviour.Properties.of()));
+
     //BlockItems
 
     //Natural Blocks
@@ -87,6 +83,7 @@ public class NWBlocks {
     public static final DeferredItem<BlockItem> PACKED_DUST_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("packed_dust_block", PACKED_DUST_BLOCK);
     public static final DeferredItem<BlockItem> SALT_CRUST_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("salt_crust", SALT_CRUST);
     public static final DeferredItem<BlockItem> DUSTSTONE_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("duststone", DUSTSTONE);
+    public static final DeferredItem<BlockItem> FERROUS_SCRAP_HEAP_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("ferrous_scrap_heap", FERROUS_SCRAP_HEAP);
 
     //Building Blocks
 
@@ -119,5 +116,6 @@ public class NWBlocks {
 
     public static final DeferredItem<BlockItem> PARCHED_SIGN_ITEM = NWItems.ITEM_REGISTRIES.register("parched_sign", (sign) -> new SignItem(new Item.Properties(), PARCHED_SIGN.get(), WALL_PARCHED_SIGN.get()));
     public static final DeferredItem<BlockItem> PARCHED_HANGING_SIGN_ITEM = NWItems.ITEM_REGISTRIES.register("parched_hanging_sign", (hangingSign) -> new HangingSignItem(PARCHED_HANGING_SIGN.get(), WALL_PARCHED_HANGING_SIGN.get(), new Item.Properties()));
+    public static final DeferredItem<BlockItem> PARCHED_CRAFTING_TABLE_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("parched_crafting_table", PARCHED_CRAFTING_TABLE);
 
 }
