@@ -5,9 +5,11 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.PushReaction;
+import net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent;
 import net.tws.nowhere.NWMain;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
@@ -20,6 +22,13 @@ public class NWBlocks {
 
     //Registry
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(NWMain.MODID);
+
+    private void setupBlockEntities(BlockEntityTypeAddBlocksEvent event) {
+        event.modify(BlockEntityType.SIGN, PARCHED_SIGN.get());
+        event.modify(BlockEntityType.SIGN, WALL_PARCHED_SIGN.get());
+        event.modify(BlockEntityType.HANGING_SIGN, PARCHED_HANGING_SIGN.get());
+        event.modify(BlockEntityType.HANGING_SIGN, WALL_PARCHED_HANGING_SIGN.get());
+    }
 
     //Blocks
     //Natural Blocks
