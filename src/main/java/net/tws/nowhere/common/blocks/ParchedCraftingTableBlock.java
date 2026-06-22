@@ -15,6 +15,7 @@ import net.minecraft.world.level.block.CraftingTableBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
+import net.tws.nowhere.common.menus.ParchedCraftingMenu;
 
 public class ParchedCraftingTableBlock extends CraftingTableBlock {
     public static final MapCodec<CraftingTableBlock> CODEC = simpleCodec(CraftingTableBlock::new);
@@ -39,6 +40,6 @@ public class ParchedCraftingTableBlock extends CraftingTableBlock {
     }
 
     protected MenuProvider getMenuProvider(BlockState state, Level level, BlockPos pos) {
-        return new SimpleMenuProvider((p_52229_, p_52230_, p_52231_) -> new CraftingMenu(p_52229_, p_52230_, ContainerLevelAccess.create(level, pos)), CONTAINER_TITLE);
+        return new SimpleMenuProvider((p_52229_, p_52230_, p_52231_) -> new ParchedCraftingMenu(p_52229_, p_52230_, ContainerLevelAccess.create(level, pos)), CONTAINER_TITLE);
     }
 }

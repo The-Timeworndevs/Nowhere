@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "nowhere:ferrous_scrap"
+    },
+    "D": {
+      "item": "nowhere:cobbled_duststone"
+    }
+  },
+  "pattern": [
+    "SDS",
+    "D D",
+    "SSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nowhere:makeshift_furnace"
+  }
+}

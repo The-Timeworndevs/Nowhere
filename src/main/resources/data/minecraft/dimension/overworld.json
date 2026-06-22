@@ -33,7 +33,7 @@
           "parameters": {
             "temperature": 0,
             "humidity": 0.7,
-            "continentalness": 0.7,
+            "continentalness": 0.75,
             "erosion": 0,
             "weirdness": 0,
             "depth": 0,

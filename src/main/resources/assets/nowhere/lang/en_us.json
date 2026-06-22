@@ -22,6 +22,7 @@
   "block.nowhere.makeshift_torch": "Makeshift Torch",
   "block.nowhere.makeshift_wall_torch": "Makeshift Wall Torch",
   "block.nowhere.ferrous_scrap_heap": "Ferrous Scrap Heap",
+  "block.nowhere.dusty_ferrous_scrap": "Dusty Ferrous Scrap",
 
 
   "block.nowhere.parched_log": "Parched Log",
@@ -42,10 +43,13 @@
   "block.nowhere.wall_parched_sign": "Parched Sign",
   "block.nowhere.parched_hanging_sign": "Parched Hanging Sign",
   "block.nowhere.wall_parched_hanging_sign": "Parched Hanging Sign",
+  "block.nowhere.parched_crafting_table": "Parched Crafting Table",
+  "block.nowhere.makeshift_furnace": "Makeshift Furnace",
 
   "item.nowhere.ferrous_alloy_ingot": "Ferrous Alloy Ingot",
-  "item.nowhere.ferrous_scrap": "Ferrous Scrap",
   "item.nowhere.ferrous_alloy_nugget": "Ferrous Alloy Nugget",
+  "item.nowhere.ferrous_scrap": "Ferrous Scrap",
+  "item.nowhere.parched_stick": "Parched Stick",
   "item.nowhere.bitumen_ball": "Bitumen Ball",
   "item.nowhere.salt_pile": "Salt Pile",
   "item.nowhere.dusty_journal": "Dusty Journal",

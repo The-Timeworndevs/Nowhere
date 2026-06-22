@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "nowhere:parched_stick"
+    },
+    "X": {
+      "item": "nowhere:ferrous_alloy_ingot"
+    }
+  },
+  "pattern": [
+    "X",
+    "#",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nowhere:ferrous_alloy_shovel"
+  }
+}

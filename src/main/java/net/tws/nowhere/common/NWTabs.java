@@ -52,6 +52,7 @@ public class NWTabs {
                 output.accept(NWBlocks.BITUMEN_ITEM.get());
                 output.accept(NWBlocks.SALT_CRUST_ITEM.get());
                 output.accept(NWBlocks.FERROUS_SCRAP_HEAP_ITEM.get());
+                output.accept(NWBlocks.DUSTY_FERROUS_SCRAP_ITEM.get());
             }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_FUNCTIONAL_TAB = GROUP_REGISTRIES.register("nowhere_functional_blocks", () -> CreativeModeTab.builder()
@@ -61,7 +62,8 @@ public class NWTabs {
                 output.accept(NWBlocks.MAKESHIFT_TORCH_ITEM.get());
                 output.accept(NWBlocks.PARCHED_SIGN_ITEM.get());
                 output.accept(NWBlocks.PARCHED_HANGING_SIGN_ITEM.get());
-                //output.accept(NWBlocks.PARCHED_CRAFTING_TABLE_ITEM.get());
+                output.accept(NWBlocks.PARCHED_CRAFTING_TABLE_ITEM.get());
+                output.accept(NWBlocks.MAKESHIFT_FURNACE_ITEM.get());
             }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_TOOLS_TAB = GROUP_REGISTRIES.register("nowhere_tools", () -> CreativeModeTab.builder()
@@ -102,8 +104,9 @@ public class NWTabs {
             .icon(() -> NWItems.FERROUS_ALLOY_INGOT.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 output.accept(NWItems.FERROUS_SCRAP.get());
-                output.accept(NWItems.FERROUS_ALLOY_INGOT.get());
                 output.accept(NWItems.FERROUS_ALLOY_NUGGET.get());
+                output.accept(NWItems.FERROUS_ALLOY_INGOT.get());
+                output.accept(NWItems.PARCHED_STICK.get());
                 output.accept(NWItems.BITUMEN_BALL.get());
                 output.accept(NWItems.SALT_PILE.get());
             }).build());

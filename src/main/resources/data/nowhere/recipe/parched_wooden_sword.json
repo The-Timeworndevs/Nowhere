@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "nowhere:parched_stick"
+    },
+    "X": {
+      "tag": "nowhere:nowhere_planks"
+    }
+  },
+  "pattern": [
+    "X",
+    "X",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nowhere:parched_wooden_sword"
+  }
+}

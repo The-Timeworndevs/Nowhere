@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "nowhere:ferrous_alloy_ingot"
+    },
+    "N": {
+      "item": "nowhere:ferrous_alloy_nugget"
+    }
+  },
+  "pattern": [
+    "N",
+    "I",
+    "N"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nowhere:ferrous_alloy_chain"
+  }
+}

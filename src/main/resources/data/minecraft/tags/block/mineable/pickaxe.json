@@ -7,6 +7,8 @@
     "nowhere:ferrous_alloy_block",
     "nowhere:ferrous_alloy_door",
     "nowhere:salt_crust",
-    "nowhere:ferrous_scrap_heap"
+    "nowhere:ferrous_scrap_heap",
+    "nowhere:dusty_ferrous_scrap",
+    "nowhere:makeshift_furnace"
   ]
 }

@@ -15,5 +15,6 @@ public class NWEvents {
         event.modify(BlockEntityType.SIGN, NWBlocks.WALL_PARCHED_SIGN.get());
         event.modify(BlockEntityType.HANGING_SIGN, NWBlocks.PARCHED_HANGING_SIGN.get());
         event.modify(BlockEntityType.HANGING_SIGN, NWBlocks.WALL_PARCHED_HANGING_SIGN.get());
+        event.modify(BlockEntityType.FURNACE, NWBlocks.MAKESHIFT_FURNACE.get());
     }
 }

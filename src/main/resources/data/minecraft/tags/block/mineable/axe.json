@@ -17,6 +17,7 @@
     "nowhere:parched_sign",
     "nowhere:wall_parched_sign",
     "nowhere:parched_hanging_sign",
-    "nowhere:wall_parched_hanging_sign"
+    "nowhere:wall_parched_hanging_sign",
+    "nowhere:parched_crafting_table"
   ]
 }
