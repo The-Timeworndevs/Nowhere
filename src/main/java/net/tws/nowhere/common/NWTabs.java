@@ -1,6 +1,6 @@
 package net.tws.nowhere.common;
 
-import net.tws.nowhere.NWMain;
+import net.tws.nowhere.Nowhere;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -10,7 +10,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class NWTabs {
 
     //Registry
-    public static final DeferredRegister<CreativeModeTab> GROUP_REGISTRIES = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, NWMain.MODID);
+    public static final DeferredRegister<CreativeModeTab> GROUP_REGISTRIES = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Nowhere.MODID);
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_BLOCKS_TAB = GROUP_REGISTRIES.register("nowhere_blocks", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.nowhere.blocks"))
@@ -38,6 +38,7 @@ public class NWTabs {
                 output.accept(NWBlocks.FERROUS_SCRAP_BLOCK_ITEM.get());
                 output.accept(NWBlocks.FERROUS_ALLOY_BLOCK_ITEM.get());
                 output.accept(NWBlocks.FERROUS_ALLOY_DOOR_ITEM.get());
+                output.accept(NWBlocks.FERROUS_ALLOY_TRAPDOOR_ITEM.get());
                 output.accept(NWBlocks.FERROUS_ALLOY_CHAIN_ITEM.get());
             }).build());
 
@@ -53,6 +54,7 @@ public class NWTabs {
                 output.accept(NWBlocks.SALT_CRUST_ITEM.get());
                 output.accept(NWBlocks.FERROUS_SCRAP_HEAP_ITEM.get());
                 output.accept(NWBlocks.DUSTY_FERROUS_SCRAP_ITEM.get());
+                output.accept(NWBlocks.DESERT_ROOTS_ITEM.get());
             }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_FUNCTIONAL_TAB = GROUP_REGISTRIES.register("nowhere_functional_blocks", () -> CreativeModeTab.builder()
@@ -109,6 +111,13 @@ public class NWTabs {
                 output.accept(NWItems.PARCHED_STICK.get());
                 output.accept(NWItems.BITUMEN_BALL.get());
                 output.accept(NWItems.SALT_PILE.get());
+            }).build());
+
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_FOOD_TAB = GROUP_REGISTRIES.register("nowhere_food", () -> CreativeModeTab.builder()
+            .title(Component.translatable("itemGroup.nowhere.food"))
+            .icon(() -> NWItems.DESERT_ROOT.get().getDefaultInstance())
+            .displayItems((parameters, output) -> {
+                output.accept(NWItems.DESERT_ROOT);
             }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_MISC_TAB = GROUP_REGISTRIES.register("nowhere_misc", () -> CreativeModeTab.builder()

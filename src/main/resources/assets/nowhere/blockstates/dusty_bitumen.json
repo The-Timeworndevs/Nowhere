@@ -1,7 +1,15 @@
 {
   "variants": {
-    "": {
-      "model": "nowhere:block/dusty_bitumen"
-    }
+    "": [
+      {
+        "model": "nowhere:block/dusty_bitumen"
+      },
+      {
+        "model": "nowhere:block/dusty_bitumen2"
+      },
+      {
+        "model": "nowhere:block/dusty_bitumen3"
+      }
+    ]
   }
 }

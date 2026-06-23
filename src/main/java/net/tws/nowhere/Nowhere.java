@@ -15,14 +15,14 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
 
-@Mod(NWMain.MODID)
-public class NWMain {
+@Mod(Nowhere.MODID)
+public class Nowhere {
 
     public static final String MODID = "nowhere";
 
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public NWMain(IEventBus modEventBus, ModContainer modContainer) {
+    public Nowhere(IEventBus modEventBus, ModContainer modContainer) {
 
         NWBlocks.BLOCKS.register(modEventBus);
 

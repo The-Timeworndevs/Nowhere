@@ -17,6 +17,6 @@
   "description": "",
   "condition": {
     "type": "modonomicon:advancement",
-    "advancement_id": "nowhere:parched_log"
+    "advancement_id": "nowhere:wood"
   }
 }

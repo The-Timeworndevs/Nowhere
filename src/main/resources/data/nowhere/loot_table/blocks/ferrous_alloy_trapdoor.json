@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nowhere:ferrous_alloy_trapdoor"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "nowhere:blocks/ferrous_alloy_trapdoor"
+}

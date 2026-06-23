@@ -6,24 +6,34 @@
   "itemGroup.nowhere.combat": "Nowhere Combat",
   "itemGroup.nowhere.materials": "Nowhere Materials",
   "itemGroup.nowhere.misc": "Nowhere Misc",
+  "itemGroup.nowhere.food": "Nowhere Food & Drink",
 
   "block.nowhere.dust_block": "Dust",
   "block.nowhere.dusty_bitumen": "Dusty Bitumen",
   "block.nowhere.packed_dust_block": "Packed Dust",
   "block.nowhere.duststone": "Duststone",
-  "block.nowhere.cobbled_duststone": "Cobbled Duststone",
-  "block.nowhere.duststone_bricks": "Duststone Bricks",
-  "block.nowhere.ferrous_alloy_block": "Block Of Ferrous Alloy",
-  "block.nowhere.ferrous_alloy_door": "Ferrous Alloy Door",
-  "block.nowhere.ferrous_alloy_chain": "Ferrous Alloy Chain",
   "block.nowhere.salt_crust": "Salt Crust",
-  "block.nowhere.ferrous_scrap_block": "Block Of Ferrous Scrap",
-  "block.nowhere.bitumen_block": "Block of Bitumen",
-  "block.nowhere.makeshift_torch": "Makeshift Torch",
-  "block.nowhere.makeshift_wall_torch": "Makeshift Wall Torch",
   "block.nowhere.ferrous_scrap_heap": "Ferrous Scrap Heap",
   "block.nowhere.dusty_ferrous_scrap": "Dusty Ferrous Scrap",
+  "block.nowhere.desert_roots": "Desert Roots",
 
+  "block.nowhere.ferrous_alloy_block": "Block Of Ferrous Alloy",
+  "block.nowhere.ferrous_alloy_door": "Ferrous Alloy Door",
+  "block.nowhere.ferrous_alloy_trapdoor": "Ferrous Alloy Trapdoor",
+  "block.nowhere.ferrous_alloy_chain": "Ferrous Alloy Chain",
+
+  "block.nowhere.ferrous_scrap_block": "Block Of Ferrous Scrap",
+
+  "block.nowhere.bitumen_block": "Block of Bitumen",
+
+  "block.nowhere.makeshift_torch": "Makeshift Torch",
+  "block.nowhere.makeshift_wall_torch": "Makeshift Wall Torch",
+
+  "block.nowhere.cobbled_duststone": "Cobbled Duststone",
+  "block.nowhere.duststone_bricks": "Duststone Bricks",
+  "block.nowhere.duststone_bricks_stairs": "Duststone Brick Stairs",
+  "block.nowhere.duststone_bricks_slab": "Duststone Brick Slab",
+  "block.nowhere.duststone_bricks_wall": "Duststone Brick Wall",
 
   "block.nowhere.parched_log": "Parched Log",
   "block.nowhere.parched_wood": "Parched Wood",
@@ -53,6 +63,7 @@
   "item.nowhere.bitumen_ball": "Bitumen Ball",
   "item.nowhere.salt_pile": "Salt Pile",
   "item.nowhere.dusty_journal": "Dusty Journal",
+  "item.nowhere.desert_root": "Desert Root",
 
   "item.nowhere.parched_wooden_sword": "Parched Wooden Sword",
   "item.nowhere.parched_wooden_shovel": "Parched Wooden Shovel",

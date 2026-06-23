@@ -13,7 +13,7 @@ import net.tws.nowhere.common.NWItems;
 import java.util.Objects;
 import java.util.function.Supplier;
 
-public enum NowhereTiers implements Tier {
+public enum NWTiers implements Tier {
 
     PARCHED_WOOD(BlockTags.INCORRECT_FOR_WOODEN_TOOL, 90, 2.0F, 0.0F, 15, () -> Ingredient.of(new ItemLike[]{NWBlocks.PARCHED_PLANKS_ITEM})),
     SCRAP(BlockTags.INCORRECT_FOR_STONE_TOOL, 200, 4.0F, 1.0F, 5, () -> Ingredient.of(new ItemLike[]{NWItems.FERROUS_SCRAP})),
@@ -26,7 +26,7 @@ public enum NowhereTiers implements Tier {
     private final int enchantmentValue;
     private final Supplier<Ingredient> repairIngredient;
 
-    private NowhereTiers(TagKey<Block> incorrectBlockForDrops, int uses, float speed, float damage, int enchantmentValue, Supplier<Ingredient> repairIngredient) {
+    private NWTiers(TagKey<Block> incorrectBlockForDrops, int uses, float speed, float damage, int enchantmentValue, Supplier<Ingredient> repairIngredient) {
         this.incorrectBlocksForDrops = incorrectBlockForDrops;
         this.uses = uses;
         this.speed = speed;

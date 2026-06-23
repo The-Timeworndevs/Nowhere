@@ -40,7 +40,9 @@
     ],
     [
       "nowhere:trees_dunes",
-      "nowhere:scrap_patch"
+      "nowhere:scrap_patch",
+      "nowhere:desert_roots_patch",
+      "nowhere:bitumen_deposit"
     ],
     [
     ]

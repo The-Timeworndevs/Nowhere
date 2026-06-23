@@ -6,8 +6,9 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent;
 import net.tws.nowhere.common.NWBlocks;
 
-@EventBusSubscriber(modid = NWMain.MODID)
-public class NWEvents {
+@EventBusSubscriber(modid =
+        Nowhere.MODID)
+public class NowhereEvents {
 
     @SubscribeEvent
     public static void setupBlockEntities(BlockEntityTypeAddBlocksEvent event) {

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_orientable_trapdoor_top",
+  "textures": {
+    "texture": "nowhere:block/ferrous_alloy_trapdoor"
+  },
+  "render_type": "minecraft:cutout"
+}

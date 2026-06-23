@@ -7,12 +7,15 @@
     },
     "D": {
       "item": "nowhere:cobbled_duststone"
+    },
+    "B": {
+      "item": "nowhere:ferrous_scrap_block"
     }
   },
   "pattern": [
     "SDS",
     "D D",
-    "SSS"
+    "BBB"
   ],
   "result": {
     "count": 1,

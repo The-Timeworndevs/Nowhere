@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "nowhere:parched_stick"
+    },
+    "X": {
+      "item": "nowhere:bitumen_ball"
+    }
+  },
+  "pattern": [
+    "X",
+    "#"
+  ],
+  "result": {
+    "count": 3,
+    "id": "nowhere:makeshift_torch"
+  }
+}

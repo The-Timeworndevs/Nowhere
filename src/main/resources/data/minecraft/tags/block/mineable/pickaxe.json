@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "nowhere:duststone",
+    "nowhere:cobbled_duststone",
     "nowhere:duststone_bricks",
     "nowhere:ferrous_scrap_block",
     "nowhere:ferrous_alloy_block",
