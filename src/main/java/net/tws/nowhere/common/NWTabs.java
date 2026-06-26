@@ -35,6 +35,9 @@ public class NWTabs {
                 output.accept(NWBlocks.DUSTSTONE_ITEM.get());
                 output.accept(NWBlocks.COBBLED_DUSTSTONE_ITEM.get());
                 output.accept(NWBlocks.DUSTSTONE_BRICKS_ITEM.get());
+                output.accept(NWBlocks.DUSTSTONE_BRICKS_STAIRS_ITEM.get());
+                output.accept(NWBlocks.DUSTSTONE_BRICKS_SLAB_ITEM.get());
+                output.accept(NWBlocks.DUSTSTONE_BRICKS_WALL_ITEM.get());
                 output.accept(NWBlocks.FERROUS_SCRAP_BLOCK_ITEM.get());
                 output.accept(NWBlocks.FERROUS_ALLOY_BLOCK_ITEM.get());
                 output.accept(NWBlocks.FERROUS_ALLOY_DOOR_ITEM.get());

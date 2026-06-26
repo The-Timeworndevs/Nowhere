@@ -33,12 +33,12 @@ public class NWBlocks {
     });
     public static final DeferredBlock<Block> PACKED_DUST_BLOCK = BLOCKS.registerSimpleBlock("packed_dust_block", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.SOUL_SOIL).strength(0.5F,0.5F));
     public static final DeferredBlock<Block> DUSTY_BITUMEN = BLOCKS.registerSimpleBlock("dusty_bitumen", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.SOUL_SOIL).strength(0.5F,0.5F));
-    public static final DeferredBlock<Block> DUSTSTONE = BLOCKS.registerSimpleBlock("duststone", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.DRIPSTONE_BLOCK).strength(0.8F,0.8F).requiresCorrectToolForDrops());
+    public static final DeferredBlock<Block> DUSTSTONE = BLOCKS.registerSimpleBlock("duststone", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.BASALT).strength(0.8F,0.8F).requiresCorrectToolForDrops());
 
     public static final DeferredBlock<Block> FERROUS_SCRAP_HEAP = BLOCKS.registerSimpleBlock("ferrous_scrap_heap", BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.ANCIENT_DEBRIS).strength(5F,6F).requiresCorrectToolForDrops());
     public static final DeferredBlock<Block> DUSTY_FERROUS_SCRAP = BLOCKS.registerSimpleBlock("dusty_ferrous_scrap", BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.ANCIENT_DEBRIS).strength(5F,6F).requiresCorrectToolForDrops());
 
-    public static final DeferredBlock<Block> DESERT_ROOTS = BLOCKS.register("desert_roots", ()-> new BushBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.HANGING_ROOTS).instabreak().noOcclusion().noCollission()) {
+    public static final DeferredBlock<Block> DESERT_ROOTS = BLOCKS.register("desert_roots", ()-> new BushBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.COBWEB).instabreak().noOcclusion().noCollission()) {
         @Override
         protected MapCodec<? extends BushBlock> codec() {
             return null;
@@ -60,12 +60,13 @@ public class NWBlocks {
     public static final DeferredBlock<Block> PARCHED_PRESSURE_PLATE = BLOCKS.register("parched_pressure_plate", ()-> new PressurePlateBlock(NWBlockSetTypes.PARCHED, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).strength(0.5F).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> PARCHED_BUTTON = BLOCKS.register("parched_button", ()-> new ButtonBlock(NWBlockSetTypes.PARCHED, 30, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).strength(0.5F).pushReaction(PushReaction.DESTROY)));
 
-    public static final DeferredBlock<Block> COBBLED_DUSTSTONE = BLOCKS.registerSimpleBlock("cobbled_duststone", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.DRIPSTONE_BLOCK).strength(0.8F,0.8F).requiresCorrectToolForDrops());
+    public static final DeferredBlock<Block> COBBLED_DUSTSTONE = BLOCKS.registerSimpleBlock("cobbled_duststone", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.BASALT).strength(0.8F,0.8F).requiresCorrectToolForDrops());
 
-    public static final DeferredBlock<Block> DUSTSTONE_BRICKS = BLOCKS.registerSimpleBlock("duststone_bricks", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.DRIPSTONE_BLOCK).strength(0.8F,0.8F).requiresCorrectToolForDrops());
-    public static final DeferredBlock<Block> DUSTSTONE_BRICKS_STAIRS = BLOCKS.register("duststone_bricks_stairs", ()-> new StairBlock(DUSTSTONE.get().defaultBlockState(),BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.DRIPSTONE_BLOCK).strength(0.8F,0.8F).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> DUSTSTONE_BRICKS_SLAB = BLOCKS.register("duststone_bricks_slab", ()-> new SlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.DRIPSTONE_BLOCK).strength(0.8F,0.8F).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> DUSTSTONE_BRICKS_WALL = BLOCKS.register("duststone_bricks_wall", ()-> new WallBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.DRIPSTONE_BLOCK).strength(0.8F,0.8F).requiresCorrectToolForDrops()));
+    //Duststone Set
+    public static final DeferredBlock<Block> DUSTSTONE_BRICKS = BLOCKS.registerSimpleBlock("duststone_bricks", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.BASALT).strength(0.8F,0.8F).requiresCorrectToolForDrops());
+    public static final DeferredBlock<Block> DUSTSTONE_BRICKS_STAIRS = BLOCKS.register("duststone_bricks_stairs", ()-> new StairBlock(DUSTSTONE.get().defaultBlockState(),BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.BASALT).strength(0.8F,0.8F).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> DUSTSTONE_BRICKS_SLAB = BLOCKS.register("duststone_bricks_slab", ()-> new SlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.BASALT).strength(0.8F,0.8F).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> DUSTSTONE_BRICKS_WALL = BLOCKS.register("duststone_bricks_wall", ()-> new WallBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.BASALT).strength(0.8F,0.8F).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> FERROUS_ALLOY_CHAIN = BLOCKS.register("ferrous_alloy_chain", ()-> new ChainBlock(BlockBehaviour.Properties.of().forceSolidOn().requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.CHAIN).noOcclusion()));
 
@@ -87,7 +88,7 @@ public class NWBlocks {
     public static final DeferredBlock<Block> WALL_PARCHED_HANGING_SIGN = BLOCKS.register("wall_parched_hanging_sign", ()-> new WallHangingSignBlock(NWWoodTypes.PARCHED, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD_HANGING_SIGN).forceSolidOn().noCollission().strength(1.0F)));
 
     public static final DeferredBlock<Block> PARCHED_CRAFTING_TABLE = BLOCKS.register("parched_crafting_table", ()-> new ParchedCraftingTableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).strength(2.5F, 3.5F)));
-    public static final DeferredBlock<Block> MAKESHIFT_FURNACE = BLOCKS.register("makeshift_furnace", ()-> new FurnaceBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.DRIPSTONE_BLOCK).strength(0.8F,0.8F).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> MAKESHIFT_FURNACE = BLOCKS.register("makeshift_furnace", ()-> new FurnaceBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.BASALT).strength(0.8F,0.8F).requiresCorrectToolForDrops()));
 
     //BlockItems
 
@@ -116,8 +117,13 @@ public class NWBlocks {
     public static final DeferredItem<BlockItem> PARCHED_PRESSURE_PLATE_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("parched_pressure_plate", PARCHED_PRESSURE_PLATE);
     public static final DeferredItem<BlockItem> PARCHED_BUTTON_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("parched_button", PARCHED_BUTTON);
 
+    //Duststone Set
     public static final DeferredItem<BlockItem> DUSTSTONE_BRICKS_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("duststone_bricks", DUSTSTONE_BRICKS);
+    public static final DeferredItem<BlockItem> DUSTSTONE_BRICKS_STAIRS_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("duststone_bricks_stairs", DUSTSTONE_BRICKS_STAIRS);
+    public static final DeferredItem<BlockItem> DUSTSTONE_BRICKS_SLAB_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("duststone_bricks_slab", DUSTSTONE_BRICKS_SLAB);
+    public static final DeferredItem<BlockItem> DUSTSTONE_BRICKS_WALL_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("duststone_bricks_wall", DUSTSTONE_BRICKS_WALL);
     public static final DeferredItem<BlockItem> COBBLED_DUSTSTONE_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("cobbled_duststone", COBBLED_DUSTSTONE);
+
     public static final DeferredItem<BlockItem> FERROUS_ALLOY_CHAIN_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("ferrous_alloy_chain", FERROUS_ALLOY_CHAIN);
 
     //Resources

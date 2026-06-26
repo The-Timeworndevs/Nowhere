@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "nowhere:block/duststone_bricks_slab"
+    },
+    "type=double": {
+      "model": "nowhere:block/duststone_bricks"
+    },
+    "type=top": {
+      "model": "nowhere:block/duststone_bricks_slab_top"
+    }
+  }
+}
