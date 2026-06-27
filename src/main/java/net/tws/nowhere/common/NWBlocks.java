@@ -60,9 +60,18 @@ public class NWBlocks {
     public static final DeferredBlock<Block> PARCHED_PRESSURE_PLATE = BLOCKS.register("parched_pressure_plate", ()-> new PressurePlateBlock(NWBlockSetTypes.PARCHED, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).strength(0.5F).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> PARCHED_BUTTON = BLOCKS.register("parched_button", ()-> new ButtonBlock(NWBlockSetTypes.PARCHED, 30, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).strength(0.5F).pushReaction(PushReaction.DESTROY)));
 
-    public static final DeferredBlock<Block> COBBLED_DUSTSTONE = BLOCKS.registerSimpleBlock("cobbled_duststone", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.BASALT).strength(0.8F,0.8F).requiresCorrectToolForDrops());
-
     //Duststone Set
+    public static final DeferredBlock<Block> DUSTSTONE_STAIRS = BLOCKS.register("duststone_stairs", ()-> new StairBlock(DUSTSTONE.get().defaultBlockState(),BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.BASALT).strength(0.8F,0.8F).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> DUSTSTONE_SLAB = BLOCKS.register("duststone_slab", ()-> new SlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.BASALT).strength(0.8F,0.8F).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> DUSTSTONE_PRESSURE_PLATE = BLOCKS.register("duststone_pressure_plate", ()-> new PressurePlateBlock(NWBlockSetTypes.DUSTSTONE, BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.BASALT).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> DUSTSTONE_BUTTON = BLOCKS.register("duststone_button", ()-> new ButtonBlock(NWBlockSetTypes.DUSTSTONE, 20, BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.BASALT).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+
+
+    public static final DeferredBlock<Block> COBBLED_DUSTSTONE = BLOCKS.registerSimpleBlock("cobbled_duststone", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.BASALT).strength(0.8F,0.8F).requiresCorrectToolForDrops());
+    public static final DeferredBlock<Block> COBBLED_DUSTSTONE_STAIRS = BLOCKS.register("cobbled_duststone_stairs", ()-> new StairBlock(COBBLED_DUSTSTONE.get().defaultBlockState(),BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.BASALT).strength(0.8F,0.8F).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> COBBLED_DUSTSTONE_SLAB = BLOCKS.register("cobbled_duststone_slab", ()-> new SlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.BASALT).strength(0.8F,0.8F).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> COBBLED_DUSTSTONE_WALL = BLOCKS.register("cobbled_duststone_wall", ()-> new WallBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.BASALT).strength(0.8F,0.8F).requiresCorrectToolForDrops()));
+
     public static final DeferredBlock<Block> DUSTSTONE_BRICKS = BLOCKS.registerSimpleBlock("duststone_bricks", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.BASALT).strength(0.8F,0.8F).requiresCorrectToolForDrops());
     public static final DeferredBlock<Block> DUSTSTONE_BRICKS_STAIRS = BLOCKS.register("duststone_bricks_stairs", ()-> new StairBlock(DUSTSTONE.get().defaultBlockState(),BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.BASALT).strength(0.8F,0.8F).requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> DUSTSTONE_BRICKS_SLAB = BLOCKS.register("duststone_bricks_slab", ()-> new SlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.BASALT).strength(0.8F,0.8F).requiresCorrectToolForDrops()));
@@ -117,12 +126,25 @@ public class NWBlocks {
     public static final DeferredItem<BlockItem> PARCHED_PRESSURE_PLATE_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("parched_pressure_plate", PARCHED_PRESSURE_PLATE);
     public static final DeferredItem<BlockItem> PARCHED_BUTTON_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("parched_button", PARCHED_BUTTON);
 
+
+
     //Duststone Set
+    public static final DeferredItem<BlockItem> DUSTSTONE_STAIRS_ITEM= NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("duststone_stairs", DUSTSTONE_STAIRS);
+    public static final DeferredItem<BlockItem> DUSTSTONE_SLAB_ITEM= NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("duststone_slab", DUSTSTONE_SLAB);
+    public static final DeferredItem<BlockItem> DUSTSTONE_PRESSURE_PLATE_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("duststone_pressure_plate", DUSTSTONE_PRESSURE_PLATE);
+    public static final DeferredItem<BlockItem> DUSTSTONE_BUTTON_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("duststone_button", DUSTSTONE_BUTTON);
+
+
+    public static final DeferredItem<BlockItem> COBBLED_DUSTSTONE_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("cobbled_duststone", COBBLED_DUSTSTONE);
+    public static final DeferredItem<BlockItem> COBBLED_DUSTSTONE_STAIRS_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("cobbled_duststone_stairs", COBBLED_DUSTSTONE_STAIRS);
+    public static final DeferredItem<BlockItem> COBBLED_DUSTSTONE_SLAB_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("cobbled_duststone_slab", COBBLED_DUSTSTONE_SLAB);
+    public static final DeferredItem<BlockItem> COBBLED_DUSTSTONE_WALL_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("cobbled_duststone_wall", COBBLED_DUSTSTONE_WALL);
+
     public static final DeferredItem<BlockItem> DUSTSTONE_BRICKS_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("duststone_bricks", DUSTSTONE_BRICKS);
     public static final DeferredItem<BlockItem> DUSTSTONE_BRICKS_STAIRS_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("duststone_bricks_stairs", DUSTSTONE_BRICKS_STAIRS);
     public static final DeferredItem<BlockItem> DUSTSTONE_BRICKS_SLAB_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("duststone_bricks_slab", DUSTSTONE_BRICKS_SLAB);
     public static final DeferredItem<BlockItem> DUSTSTONE_BRICKS_WALL_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("duststone_bricks_wall", DUSTSTONE_BRICKS_WALL);
-    public static final DeferredItem<BlockItem> COBBLED_DUSTSTONE_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("cobbled_duststone", COBBLED_DUSTSTONE);
+
 
     public static final DeferredItem<BlockItem> FERROUS_ALLOY_CHAIN_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("ferrous_alloy_chain", FERROUS_ALLOY_CHAIN);
 

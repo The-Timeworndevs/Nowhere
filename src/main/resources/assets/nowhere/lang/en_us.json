@@ -29,7 +29,16 @@
   "block.nowhere.makeshift_torch": "Makeshift Torch",
   "block.nowhere.makeshift_wall_torch": "Makeshift Wall Torch",
 
+  "block.nowhere.duststone_stairs": "Duststone Stairs",
+  "block.nowhere.duststone_slab": "Duststone Slab",
+  "block.nowhere.duststone_wall": "Duststone Wall",
+  "block.nowhere.duststone_pressure_plate": "Duststone Pressure Plate",
+  "block.nowhere.duststone_button": "Duststone Button",
+
   "block.nowhere.cobbled_duststone": "Cobbled Duststone",
+  "block.nowhere.cobbled_duststone_stairs": "Cobbled Duststone Stairs",
+  "block.nowhere.cobbled_duststone_slab": "Cobbled Duststone Slab",
+  "block.nowhere.cobbled_duststone_wall": "Cobbled Duststone Wall",
   "block.nowhere.duststone_bricks": "Duststone Bricks",
   "block.nowhere.duststone_bricks_stairs": "Duststone Brick Stairs",
   "block.nowhere.duststone_bricks_slab": "Duststone Brick Slab",
@@ -82,6 +91,10 @@
   "item.nowhere.ferrous_alloy_pickaxe": "Ferrous Alloy Pickaxe",
   "item.nowhere.ferrous_alloy_axe": "Ferrous Alloy Axe",
   "item.nowhere.ferrous_alloy_hoe": "Ferrous Alloy Hoe",
+  "item.nowhere.ferrous_alloy_helmet": "Ferrous Alloy Helmet",
+  "item.nowhere.ferrous_alloy_chestplate": "Ferrous Alloy Chestplate",
+  "item.nowhere.ferrous_alloy_leggings": "Ferrous Alloy Leggings",
+  "item.nowhere.ferrous_alloy_boots": "Ferrous Alloy Boots",
 
   "advancements.nowhere_story.root.title": "Nowhere Story",
   "advancements.nowhere_story.root.description": "The story of an (un)lucky player thrown into this blasted plane",

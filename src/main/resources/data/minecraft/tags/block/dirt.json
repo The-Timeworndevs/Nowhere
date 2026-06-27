@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "nowhere:dust_block"
+    "nowhere:dust",
+    "nowhere:packed_dust"
   ]
 }

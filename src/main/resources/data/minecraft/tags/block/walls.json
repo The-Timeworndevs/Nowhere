@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "nowhere:duststone_bricks_wall"
+    "nowhere:duststone_bricks_wall",
+    "nowhere:cobbled_duststone_wall"
   ]
 }

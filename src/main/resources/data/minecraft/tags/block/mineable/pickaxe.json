@@ -3,6 +3,9 @@
   "values": [
     "nowhere:duststone",
     "nowhere:cobbled_duststone",
+    "nowhere:cobbled_duststone_stairs",
+    "nowhere:cobbled_duststone_slab",
+    "nowhere:cobbled_duststone_wall",
     "nowhere:duststone_bricks",
     "nowhere:duststone_bricks_stairs",
     "nowhere:duststone_bricks_slab",

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "nowhere:duststone"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "nowhere:duststone_button"
+  }
+}

@@ -32,12 +32,23 @@ public class NWTabs {
                 output.accept(NWBlocks.PARCHED_PRESSURE_PLATE_ITEM.get());
                 output.accept(NWBlocks.PARCHED_BUTTON_ITEM.get());
 
+                //Duststone Set
                 output.accept(NWBlocks.DUSTSTONE_ITEM.get());
+                output.accept(NWBlocks.DUSTSTONE_STAIRS_ITEM.get());
+                output.accept(NWBlocks.DUSTSTONE_SLAB_ITEM.get());
+                output.accept(NWBlocks.DUSTSTONE_PRESSURE_PLATE_ITEM.get());
+                output.accept(NWBlocks.DUSTSTONE_BUTTON_ITEM.get());
+
                 output.accept(NWBlocks.COBBLED_DUSTSTONE_ITEM.get());
+                output.accept(NWBlocks.COBBLED_DUSTSTONE_STAIRS_ITEM.get());
+                output.accept(NWBlocks.COBBLED_DUSTSTONE_SLAB_ITEM.get());
+                output.accept(NWBlocks.COBBLED_DUSTSTONE_WALL_ITEM.get());
+
                 output.accept(NWBlocks.DUSTSTONE_BRICKS_ITEM.get());
                 output.accept(NWBlocks.DUSTSTONE_BRICKS_STAIRS_ITEM.get());
                 output.accept(NWBlocks.DUSTSTONE_BRICKS_SLAB_ITEM.get());
                 output.accept(NWBlocks.DUSTSTONE_BRICKS_WALL_ITEM.get());
+
                 output.accept(NWBlocks.FERROUS_SCRAP_BLOCK_ITEM.get());
                 output.accept(NWBlocks.FERROUS_ALLOY_BLOCK_ITEM.get());
                 output.accept(NWBlocks.FERROUS_ALLOY_DOOR_ITEM.get());
@@ -102,6 +113,10 @@ public class NWTabs {
                 output.accept(NWItems.PARCHED_WOODEN_SWORD);
                 output.accept(NWItems.SCRAP_SWORD);
                 output.accept(NWItems.FERROUS_ALLOY_SWORD);
+                output.accept(NWItems.FERROUS_ALLOY_HELMET);
+                output.accept(NWItems.FERROUS_ALLOY_CHESTPLATE);
+                output.accept(NWItems.FERROUS_ALLOY_LEGGINGS);
+                output.accept(NWItems.FERROUS_ALLOY_BOOTS);
             }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_MATERIALS_TAB = GROUP_REGISTRIES.register("nowhere_materials", () -> CreativeModeTab.builder()

@@ -27,6 +27,18 @@ repositories {
     maven {
         url = "https://dl.cloudsmith.io/public/klikli-dev/mods/maven/"
     }
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "Modrinth"
+                url = "https://api.modrinth.com/maven"
+            }
+        }
+        // forRepositories(fg.repository) // Uncomment when using ForgeGradle
+        filter {
+            includeGroup "maven.modrinth"
+        }
+    }
 }
 
 base {
@@ -129,9 +141,9 @@ dependencies {
     // localRuntime "mezz.jei:jei-${mc_version}-neoforge:${jei_version}"
 
     implementation "maven.modrinth:lithostitched:${project.ls_version}"
-    implementation("de.dafuqs:revelationary-neoforge:${project.revelationary_version}")
-    implementation ("com.klikli_dev:modonomicon-${minecraft_version}-neoforge:${modonomicon_version}") {transitive=false}
-
+    //implementation("de.dafuqs:revelationary-neoforge:${project.revelationary_version}")
+    //implementation ("com.klikli_dev:modonomicon-${minecraft_version}-neoforge:${modonomicon_version}") {transitive=false}
+    implementation "maven.modrinth:8BmcQJ2H:hv8CwiCV"
     // Example mod dependency using a mod jar from ./libs with a flat dir repository
     // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar
     // The group id is ignored when searching -- in this case, it is "blank"
