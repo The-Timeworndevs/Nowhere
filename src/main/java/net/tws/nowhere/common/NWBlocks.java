@@ -25,13 +25,13 @@ public class NWBlocks {
     //Blocks
     //Natural Blocks
     public static final DeferredBlock<Block> PARCHED_LOG = BLOCKS.register("parched_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.STEM).strength(2.5F, 3.5F)));
-    public static final DeferredBlock<Block> DUST_BLOCK = BLOCKS.register("dust_block", () -> new FallingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.SOUL_SAND).strength(0.5F, 0.5F)) {
+    public static final DeferredBlock<Block> DUST = BLOCKS.register("dust", () -> new FallingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.SOUL_SAND).strength(0.5F, 0.5F)) {
         @Override
         protected MapCodec<? extends FallingBlock> codec() {
             return null;
         }
     });
-    public static final DeferredBlock<Block> PACKED_DUST_BLOCK = BLOCKS.registerSimpleBlock("packed_dust_block", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.SOUL_SOIL).strength(0.5F,0.5F));
+    public static final DeferredBlock<Block> PACKED_DUST = BLOCKS.registerSimpleBlock("packed_dust", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.SOUL_SOIL).strength(0.5F,0.5F));
     public static final DeferredBlock<Block> DUSTY_BITUMEN = BLOCKS.registerSimpleBlock("dusty_bitumen", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.SOUL_SOIL).strength(0.5F,0.5F));
     public static final DeferredBlock<Block> DUSTSTONE = BLOCKS.registerSimpleBlock("duststone", BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.BASALT).strength(0.8F,0.8F).requiresCorrectToolForDrops());
 
@@ -94,9 +94,9 @@ public class NWBlocks {
 
     //Natural Blocks
     public static final DeferredItem<BlockItem> PARCHED_LOG_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("parched_log", PARCHED_LOG);
-    public static final DeferredItem<BlockItem> DUST_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("dust_block", DUST_BLOCK);
+    public static final DeferredItem<BlockItem> DUST_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("dust", DUST);
     public static final DeferredItem<BlockItem> DUSTY_BITUMEN_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("dusty_bitumen", DUSTY_BITUMEN);
-    public static final DeferredItem<BlockItem> PACKED_DUST_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("packed_dust_block", PACKED_DUST_BLOCK);
+    public static final DeferredItem<BlockItem> PACKED_DUST_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("packed_dust", PACKED_DUST);
     public static final DeferredItem<BlockItem> SALT_CRUST_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("salt_crust", SALT_CRUST);
     public static final DeferredItem<BlockItem> DUSTSTONE_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("duststone", DUSTSTONE);
     public static final DeferredItem<BlockItem> FERROUS_SCRAP_HEAP_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("ferrous_scrap_heap", FERROUS_SCRAP_HEAP);

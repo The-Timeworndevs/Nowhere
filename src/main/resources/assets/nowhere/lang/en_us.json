@@ -8,9 +8,9 @@
   "itemGroup.nowhere.misc": "Nowhere Misc",
   "itemGroup.nowhere.food": "Nowhere Food & Drink",
 
-  "block.nowhere.dust_block": "Dust",
+  "block.nowhere.dust": "Dust",
   "block.nowhere.dusty_bitumen": "Dusty Bitumen",
-  "block.nowhere.packed_dust_block": "Packed Dust",
+  "block.nowhere.packed_dust": "Packed Dust",
   "block.nowhere.duststone": "Duststone",
   "block.nowhere.salt_crust": "Salt Crust",
   "block.nowhere.ferrous_scrap_heap": "Ferrous Scrap Heap",

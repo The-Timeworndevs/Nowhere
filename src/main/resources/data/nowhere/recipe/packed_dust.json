@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "nowhere:dust_block"
+      "item": "nowhere:dust"
     }
   },
   "pattern": [
@@ -12,6 +12,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "nowhere:packed_dust_block"
+    "id": "nowhere:packed_dust"
   }
 }
