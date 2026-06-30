@@ -38,7 +38,7 @@ public class NWBlocks {
     public static final DeferredBlock<Block> FERROUS_SCRAP_HEAP = BLOCKS.registerSimpleBlock("ferrous_scrap_heap", BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.ANCIENT_DEBRIS).strength(5F,6F).requiresCorrectToolForDrops());
     public static final DeferredBlock<Block> DUSTY_FERROUS_SCRAP = BLOCKS.registerSimpleBlock("dusty_ferrous_scrap", BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.ANCIENT_DEBRIS).strength(5F,6F).requiresCorrectToolForDrops());
 
-    public static final DeferredBlock<Block> DESERT_ROOTS = BLOCKS.register("desert_roots", ()-> new BushBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.COBWEB).instabreak().noOcclusion().noCollission()) {
+    public static final DeferredBlock<Block> DESERT_ROOTS = BLOCKS.register("desert_roots", ()-> new BushBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.COBWEB).instabreak().noOcclusion().noCollission().offsetType(BlockBehaviour.OffsetType.XYZ)) {
         @Override
         protected MapCodec<? extends BushBlock> codec() {
             return null;
