@@ -10,9 +10,9 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class NWTabs {
 
     //Registry
-    public static final DeferredRegister<CreativeModeTab> GROUP_REGISTRIES = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Nowhere.MODID);
+    public static final DeferredRegister<CreativeModeTab> GROUPS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Nowhere.MODID);
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_BLOCKS_TAB = GROUP_REGISTRIES.register("nowhere_blocks", () -> CreativeModeTab.builder()
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_BLOCKS_TAB = GROUPS.register("nowhere_blocks", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.nowhere.blocks"))
             .icon(() -> NWBlocks.DUSTSTONE_BRICKS_ITEM.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
@@ -56,7 +56,7 @@ public class NWTabs {
                 output.accept(NWBlocks.FERROUS_ALLOY_CHAIN_ITEM.get());
             }).build());
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_NATURAL_TAB = GROUP_REGISTRIES.register("nowhere_natural_blocks", () -> CreativeModeTab.builder()
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_NATURAL_TAB = GROUPS.register("nowhere_natural_blocks", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.nowhere.natural"))
             .icon(() -> NWBlocks.DUST_ITEM.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
@@ -71,7 +71,7 @@ public class NWTabs {
                 output.accept(NWBlocks.DESERT_ROOTS_ITEM.get());
             }).build());
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_FUNCTIONAL_TAB = GROUP_REGISTRIES.register("nowhere_functional_blocks", () -> CreativeModeTab.builder()
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_FUNCTIONAL_TAB = GROUPS.register("nowhere_functional_blocks", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.nowhere.functional"))
             .icon(() -> NWBlocks.MAKESHIFT_TORCH_ITEM.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
@@ -82,7 +82,7 @@ public class NWTabs {
                 output.accept(NWBlocks.MAKESHIFT_FURNACE_ITEM.get());
             }).build());
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_TOOLS_TAB = GROUP_REGISTRIES.register("nowhere_tools", () -> CreativeModeTab.builder()
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_TOOLS_TAB = GROUPS.register("nowhere_tools", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.nowhere.tools"))
             .icon(() -> NWItems.SCRAP_PICKAXE.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
@@ -106,7 +106,7 @@ public class NWTabs {
 
             }).build());
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_COMBAT_TAB = GROUP_REGISTRIES.register("nowhere_combat", () -> CreativeModeTab.builder()
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_COMBAT_TAB = GROUPS.register("nowhere_combat", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.nowhere.combat"))
             .icon(() -> NWItems.SCRAP_SWORD.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
@@ -119,7 +119,7 @@ public class NWTabs {
                 output.accept(NWItems.FERROUS_ALLOY_BOOTS);
             }).build());
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_MATERIALS_TAB = GROUP_REGISTRIES.register("nowhere_materials", () -> CreativeModeTab.builder()
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_MATERIALS_TAB = GROUPS.register("nowhere_materials", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.nowhere.materials"))
             .icon(() -> NWItems.FERROUS_ALLOY_INGOT.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
@@ -131,14 +131,14 @@ public class NWTabs {
                 output.accept(NWItems.SALT_PILE.get());
             }).build());
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_FOOD_TAB = GROUP_REGISTRIES.register("nowhere_food", () -> CreativeModeTab.builder()
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_FOOD_TAB = GROUPS.register("nowhere_food", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.nowhere.food"))
             .icon(() -> NWItems.DESERT_ROOT.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 output.accept(NWItems.DESERT_ROOT);
             }).build());
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_MISC_TAB = GROUP_REGISTRIES.register("nowhere_misc", () -> CreativeModeTab.builder()
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_MISC_TAB = GROUPS.register("nowhere_misc", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.nowhere.misc"))
             .icon(() -> NWItems.DUSTY_JOURNAL.get().getDefaultInstance())
             .displayItems((parameters, output) -> {

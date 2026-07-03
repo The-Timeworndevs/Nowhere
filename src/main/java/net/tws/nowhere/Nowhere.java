@@ -1,8 +1,6 @@
 package net.tws.nowhere;
 
-import net.tws.nowhere.common.NWBlocks;
-import net.tws.nowhere.common.NWItems;
-import net.tws.nowhere.common.NWTabs;
+import net.tws.nowhere.common.*;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -26,9 +24,13 @@ public class Nowhere {
 
         NWBlocks.BLOCKS.register(modEventBus);
 
-        NWItems.ITEM_REGISTRIES.register(modEventBus);
+        NWFluids.FLUIDS.register(modEventBus);
 
-        NWTabs.GROUP_REGISTRIES.register(modEventBus);
+        NWFluidTypes.FLUID_TYPES.register(modEventBus);
+
+        NWItems.ITEMS.register(modEventBus);
+
+        NWTabs.GROUPS.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 

@@ -44,7 +44,8 @@ public class NWBlocks {
             return null;
         }
     });
-    //public static final DeferredBlock<Block> STILL_ULTRASALINE_WATER = BLOCKS.register("still_altrasaline_water",()-> new LiquidBlock());
+
+    public static final DeferredBlock<LiquidBlock> ULTRASALINE_WATER = BLOCKS.register("ultrasaline_water", ()-> new LiquidBlock(NWFluids.SOURCE_ULTRASALINE_WATER.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER)));
 
     //Building Blocks
     public static final DeferredBlock<Block> PARCHED_WOOD = BLOCKS.register("parched_wood", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.STEM).strength(2.5F, 3.5F)));
@@ -102,67 +103,67 @@ public class NWBlocks {
     //BlockItems
 
     //Natural Blocks
-    public static final DeferredItem<BlockItem> PARCHED_LOG_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("parched_log", PARCHED_LOG);
-    public static final DeferredItem<BlockItem> DUST_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("dust", DUST);
-    public static final DeferredItem<BlockItem> DUSTY_BITUMEN_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("dusty_bitumen", DUSTY_BITUMEN);
-    public static final DeferredItem<BlockItem> PACKED_DUST_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("packed_dust", PACKED_DUST);
-    public static final DeferredItem<BlockItem> SALT_CRUST_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("salt_crust", SALT_CRUST);
-    public static final DeferredItem<BlockItem> DUSTSTONE_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("duststone", DUSTSTONE);
-    public static final DeferredItem<BlockItem> FERROUS_SCRAP_HEAP_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("ferrous_scrap_heap", FERROUS_SCRAP_HEAP);
-    public static final DeferredItem<BlockItem> DUSTY_FERROUS_SCRAP_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("dusty_ferrous_scrap", DUSTY_FERROUS_SCRAP);
-    public static final DeferredItem<BlockItem> DESERT_ROOTS_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("desert_roots", DESERT_ROOTS);
+    public static final DeferredItem<BlockItem> PARCHED_LOG_ITEM = NWItems.ITEMS.registerSimpleBlockItem("parched_log", PARCHED_LOG);
+    public static final DeferredItem<BlockItem> DUST_ITEM = NWItems.ITEMS.registerSimpleBlockItem("dust", DUST);
+    public static final DeferredItem<BlockItem> DUSTY_BITUMEN_ITEM = NWItems.ITEMS.registerSimpleBlockItem("dusty_bitumen", DUSTY_BITUMEN);
+    public static final DeferredItem<BlockItem> PACKED_DUST_ITEM = NWItems.ITEMS.registerSimpleBlockItem("packed_dust", PACKED_DUST);
+    public static final DeferredItem<BlockItem> SALT_CRUST_ITEM = NWItems.ITEMS.registerSimpleBlockItem("salt_crust", SALT_CRUST);
+    public static final DeferredItem<BlockItem> DUSTSTONE_ITEM = NWItems.ITEMS.registerSimpleBlockItem("duststone", DUSTSTONE);
+    public static final DeferredItem<BlockItem> FERROUS_SCRAP_HEAP_ITEM = NWItems.ITEMS.registerSimpleBlockItem("ferrous_scrap_heap", FERROUS_SCRAP_HEAP);
+    public static final DeferredItem<BlockItem> DUSTY_FERROUS_SCRAP_ITEM = NWItems.ITEMS.registerSimpleBlockItem("dusty_ferrous_scrap", DUSTY_FERROUS_SCRAP);
+    public static final DeferredItem<BlockItem> DESERT_ROOTS_ITEM = NWItems.ITEMS.registerSimpleBlockItem("desert_roots", DESERT_ROOTS);
 
     //Building Blocks
 
     //Parched Set
-    public static final DeferredItem<BlockItem> PARCHED_WOOD_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("parched_wood", PARCHED_WOOD);
-    public static final DeferredItem<BlockItem> STRIPPED_PARCHED_LOG_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("stripped_parched_log", STRIPPED_PARCHED_LOG);
-    public static final DeferredItem<BlockItem> STRIPPED_PARCHED_WOOD_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("stripped_parched_wood", STRIPPED_PARCHED_WOOD);
-    public static final DeferredItem<BlockItem> PARCHED_PLANKS_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("parched_planks", PARCHED_PLANKS);
-    public static final DeferredItem<BlockItem> PARCHED_STAIRS_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("parched_stairs", PARCHED_STAIRS);
-    public static final DeferredItem<BlockItem> PARCHED_SLAB_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("parched_slab", PARCHED_SLAB);
-    public static final DeferredItem<BlockItem> PARCHED_FENCE_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("parched_fence", PARCHED_FENCE);
-    public static final DeferredItem<BlockItem> PARCHED_FENCE_GATE_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("parched_fence_gate", PARCHED_FENCE_GATE);
-    public static final DeferredItem<BlockItem> PARCHED_PRESSURE_PLATE_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("parched_pressure_plate", PARCHED_PRESSURE_PLATE);
-    public static final DeferredItem<BlockItem> PARCHED_BUTTON_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("parched_button", PARCHED_BUTTON);
+    public static final DeferredItem<BlockItem> PARCHED_WOOD_ITEM = NWItems.ITEMS.registerSimpleBlockItem("parched_wood", PARCHED_WOOD);
+    public static final DeferredItem<BlockItem> STRIPPED_PARCHED_LOG_ITEM = NWItems.ITEMS.registerSimpleBlockItem("stripped_parched_log", STRIPPED_PARCHED_LOG);
+    public static final DeferredItem<BlockItem> STRIPPED_PARCHED_WOOD_ITEM = NWItems.ITEMS.registerSimpleBlockItem("stripped_parched_wood", STRIPPED_PARCHED_WOOD);
+    public static final DeferredItem<BlockItem> PARCHED_PLANKS_ITEM = NWItems.ITEMS.registerSimpleBlockItem("parched_planks", PARCHED_PLANKS);
+    public static final DeferredItem<BlockItem> PARCHED_STAIRS_ITEM = NWItems.ITEMS.registerSimpleBlockItem("parched_stairs", PARCHED_STAIRS);
+    public static final DeferredItem<BlockItem> PARCHED_SLAB_ITEM = NWItems.ITEMS.registerSimpleBlockItem("parched_slab", PARCHED_SLAB);
+    public static final DeferredItem<BlockItem> PARCHED_FENCE_ITEM = NWItems.ITEMS.registerSimpleBlockItem("parched_fence", PARCHED_FENCE);
+    public static final DeferredItem<BlockItem> PARCHED_FENCE_GATE_ITEM = NWItems.ITEMS.registerSimpleBlockItem("parched_fence_gate", PARCHED_FENCE_GATE);
+    public static final DeferredItem<BlockItem> PARCHED_PRESSURE_PLATE_ITEM = NWItems.ITEMS.registerSimpleBlockItem("parched_pressure_plate", PARCHED_PRESSURE_PLATE);
+    public static final DeferredItem<BlockItem> PARCHED_BUTTON_ITEM = NWItems.ITEMS.registerSimpleBlockItem("parched_button", PARCHED_BUTTON);
 
 
 
     //Duststone Set
-    public static final DeferredItem<BlockItem> DUSTSTONE_STAIRS_ITEM= NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("duststone_stairs", DUSTSTONE_STAIRS);
-    public static final DeferredItem<BlockItem> DUSTSTONE_SLAB_ITEM= NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("duststone_slab", DUSTSTONE_SLAB);
-    public static final DeferredItem<BlockItem> DUSTSTONE_PRESSURE_PLATE_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("duststone_pressure_plate", DUSTSTONE_PRESSURE_PLATE);
-    public static final DeferredItem<BlockItem> DUSTSTONE_BUTTON_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("duststone_button", DUSTSTONE_BUTTON);
+    public static final DeferredItem<BlockItem> DUSTSTONE_STAIRS_ITEM= NWItems.ITEMS.registerSimpleBlockItem("duststone_stairs", DUSTSTONE_STAIRS);
+    public static final DeferredItem<BlockItem> DUSTSTONE_SLAB_ITEM= NWItems.ITEMS.registerSimpleBlockItem("duststone_slab", DUSTSTONE_SLAB);
+    public static final DeferredItem<BlockItem> DUSTSTONE_PRESSURE_PLATE_ITEM = NWItems.ITEMS.registerSimpleBlockItem("duststone_pressure_plate", DUSTSTONE_PRESSURE_PLATE);
+    public static final DeferredItem<BlockItem> DUSTSTONE_BUTTON_ITEM = NWItems.ITEMS.registerSimpleBlockItem("duststone_button", DUSTSTONE_BUTTON);
 
 
-    public static final DeferredItem<BlockItem> COBBLED_DUSTSTONE_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("cobbled_duststone", COBBLED_DUSTSTONE);
-    public static final DeferredItem<BlockItem> COBBLED_DUSTSTONE_STAIRS_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("cobbled_duststone_stairs", COBBLED_DUSTSTONE_STAIRS);
-    public static final DeferredItem<BlockItem> COBBLED_DUSTSTONE_SLAB_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("cobbled_duststone_slab", COBBLED_DUSTSTONE_SLAB);
-    public static final DeferredItem<BlockItem> COBBLED_DUSTSTONE_WALL_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("cobbled_duststone_wall", COBBLED_DUSTSTONE_WALL);
+    public static final DeferredItem<BlockItem> COBBLED_DUSTSTONE_ITEM = NWItems.ITEMS.registerSimpleBlockItem("cobbled_duststone", COBBLED_DUSTSTONE);
+    public static final DeferredItem<BlockItem> COBBLED_DUSTSTONE_STAIRS_ITEM = NWItems.ITEMS.registerSimpleBlockItem("cobbled_duststone_stairs", COBBLED_DUSTSTONE_STAIRS);
+    public static final DeferredItem<BlockItem> COBBLED_DUSTSTONE_SLAB_ITEM = NWItems.ITEMS.registerSimpleBlockItem("cobbled_duststone_slab", COBBLED_DUSTSTONE_SLAB);
+    public static final DeferredItem<BlockItem> COBBLED_DUSTSTONE_WALL_ITEM = NWItems.ITEMS.registerSimpleBlockItem("cobbled_duststone_wall", COBBLED_DUSTSTONE_WALL);
 
-    public static final DeferredItem<BlockItem> DUSTSTONE_BRICKS_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("duststone_bricks", DUSTSTONE_BRICKS);
-    public static final DeferredItem<BlockItem> DUSTSTONE_BRICKS_STAIRS_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("duststone_bricks_stairs", DUSTSTONE_BRICKS_STAIRS);
-    public static final DeferredItem<BlockItem> DUSTSTONE_BRICKS_SLAB_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("duststone_bricks_slab", DUSTSTONE_BRICKS_SLAB);
-    public static final DeferredItem<BlockItem> DUSTSTONE_BRICKS_WALL_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("duststone_bricks_wall", DUSTSTONE_BRICKS_WALL);
+    public static final DeferredItem<BlockItem> DUSTSTONE_BRICKS_ITEM = NWItems.ITEMS.registerSimpleBlockItem("duststone_bricks", DUSTSTONE_BRICKS);
+    public static final DeferredItem<BlockItem> DUSTSTONE_BRICKS_STAIRS_ITEM = NWItems.ITEMS.registerSimpleBlockItem("duststone_bricks_stairs", DUSTSTONE_BRICKS_STAIRS);
+    public static final DeferredItem<BlockItem> DUSTSTONE_BRICKS_SLAB_ITEM = NWItems.ITEMS.registerSimpleBlockItem("duststone_bricks_slab", DUSTSTONE_BRICKS_SLAB);
+    public static final DeferredItem<BlockItem> DUSTSTONE_BRICKS_WALL_ITEM = NWItems.ITEMS.registerSimpleBlockItem("duststone_bricks_wall", DUSTSTONE_BRICKS_WALL);
 
 
-    public static final DeferredItem<BlockItem> FERROUS_ALLOY_CHAIN_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("ferrous_alloy_chain", FERROUS_ALLOY_CHAIN);
+    public static final DeferredItem<BlockItem> FERROUS_ALLOY_CHAIN_ITEM = NWItems.ITEMS.registerSimpleBlockItem("ferrous_alloy_chain", FERROUS_ALLOY_CHAIN);
 
     //Resources
-    public static final DeferredItem<BlockItem> FERROUS_SCRAP_BLOCK_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("ferrous_scrap_block", FERROUS_SCRAP_BLOCK);
-    public static final DeferredItem<BlockItem> FERROUS_ALLOY_BLOCK_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("ferrous_alloy_block", FERROUS_ALLOY_BLOCK);
-    public static final DeferredItem<BlockItem> BITUMEN_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("bitumen_block", BITUMEN_BLOCK);
+    public static final DeferredItem<BlockItem> FERROUS_SCRAP_BLOCK_ITEM = NWItems.ITEMS.registerSimpleBlockItem("ferrous_scrap_block", FERROUS_SCRAP_BLOCK);
+    public static final DeferredItem<BlockItem> FERROUS_ALLOY_BLOCK_ITEM = NWItems.ITEMS.registerSimpleBlockItem("ferrous_alloy_block", FERROUS_ALLOY_BLOCK);
+    public static final DeferredItem<BlockItem> BITUMEN_ITEM = NWItems.ITEMS.registerSimpleBlockItem("bitumen_block", BITUMEN_BLOCK);
 
     //Functional Blocks
-    public static final DeferredItem<BlockItem> PARCHED_DOOR_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("parched_door", PARCHED_DOOR);
-    public static final DeferredItem<BlockItem> PARCHED_TRAPDOOR_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("parched_trapdoor", PARCHED_TRAPDOOR);
-    public static final DeferredItem<BlockItem> FERROUS_ALLOY_DOOR_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("ferrous_alloy_door", FERROUS_ALLOY_DOOR);
-    public static final DeferredItem<BlockItem> FERROUS_ALLOY_TRAPDOOR_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("ferrous_alloy_trapdoor", FERROUS_ALLOY_TRAPDOOR);
-    public static final DeferredItem<BlockItem> MAKESHIFT_TORCH_ITEM = NWItems.ITEM_REGISTRIES.register("makeshift_torch", (torch) -> new StandingAndWallBlockItem(MAKESHIFT_TORCH.get(), WALL_MAKESHIFT_TORCH.get(), new Item.Properties(), Direction.DOWN));
+    public static final DeferredItem<BlockItem> PARCHED_DOOR_ITEM = NWItems.ITEMS.registerSimpleBlockItem("parched_door", PARCHED_DOOR);
+    public static final DeferredItem<BlockItem> PARCHED_TRAPDOOR_ITEM = NWItems.ITEMS.registerSimpleBlockItem("parched_trapdoor", PARCHED_TRAPDOOR);
+    public static final DeferredItem<BlockItem> FERROUS_ALLOY_DOOR_ITEM = NWItems.ITEMS.registerSimpleBlockItem("ferrous_alloy_door", FERROUS_ALLOY_DOOR);
+    public static final DeferredItem<BlockItem> FERROUS_ALLOY_TRAPDOOR_ITEM = NWItems.ITEMS.registerSimpleBlockItem("ferrous_alloy_trapdoor", FERROUS_ALLOY_TRAPDOOR);
+    public static final DeferredItem<BlockItem> MAKESHIFT_TORCH_ITEM = NWItems.ITEMS.register("makeshift_torch", (torch) -> new StandingAndWallBlockItem(MAKESHIFT_TORCH.get(), WALL_MAKESHIFT_TORCH.get(), new Item.Properties(), Direction.DOWN));
 
-    public static final DeferredItem<BlockItem> PARCHED_SIGN_ITEM = NWItems.ITEM_REGISTRIES.register("parched_sign", (sign) -> new SignItem(new Item.Properties().stacksTo(16), PARCHED_SIGN.get(), WALL_PARCHED_SIGN.get()));
-    public static final DeferredItem<BlockItem> PARCHED_HANGING_SIGN_ITEM = NWItems.ITEM_REGISTRIES.register("parched_hanging_sign", (hangingSign) -> new HangingSignItem(PARCHED_HANGING_SIGN.get(), WALL_PARCHED_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
-    public static final DeferredItem<BlockItem> PARCHED_CRAFTING_TABLE_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("parched_crafting_table", PARCHED_CRAFTING_TABLE);
-    public static final DeferredItem<BlockItem> MAKESHIFT_FURNACE_ITEM = NWItems.ITEM_REGISTRIES.registerSimpleBlockItem("makeshift_furnace", MAKESHIFT_FURNACE);
+    public static final DeferredItem<BlockItem> PARCHED_SIGN_ITEM = NWItems.ITEMS.register("parched_sign", (sign) -> new SignItem(new Item.Properties().stacksTo(16), PARCHED_SIGN.get(), WALL_PARCHED_SIGN.get()));
+    public static final DeferredItem<BlockItem> PARCHED_HANGING_SIGN_ITEM = NWItems.ITEMS.register("parched_hanging_sign", (hangingSign) -> new HangingSignItem(PARCHED_HANGING_SIGN.get(), WALL_PARCHED_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+    public static final DeferredItem<BlockItem> PARCHED_CRAFTING_TABLE_ITEM = NWItems.ITEMS.registerSimpleBlockItem("parched_crafting_table", PARCHED_CRAFTING_TABLE);
+    public static final DeferredItem<BlockItem> MAKESHIFT_FURNACE_ITEM = NWItems.ITEMS.registerSimpleBlockItem("makeshift_furnace", MAKESHIFT_FURNACE);
 
 }
