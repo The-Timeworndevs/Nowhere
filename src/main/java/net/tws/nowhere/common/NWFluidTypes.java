@@ -21,7 +21,7 @@ public class NWFluidTypes {
             FLOWING_ULTRASALINE_WATER_LOCATION,
             0x91f2b1b2 ,
             new Vector3f(102f / 255f, 1f, 102f / 255f),
-            FluidType.Properties.create().canSwim(true).canDrown(true)
+            FluidType.Properties.create().canSwim(true).canDrown(true).density(3000).viscosity(6000)
     ));
 
     public static void register(IEventBus eventBus) {
