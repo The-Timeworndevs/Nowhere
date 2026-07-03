@@ -15,6 +15,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.tws.nowhere.common.blocks.NWBlockSetTypes;
 import net.tws.nowhere.common.blocks.NWWoodTypes;
 import net.tws.nowhere.common.blocks.ParchedCraftingTableBlock;
+import net.tws.nowhere.common.blocks.UltrasalineWaterBlock;
 
 public class NWBlocks {
 
@@ -45,7 +46,7 @@ public class NWBlocks {
         }
     });
 
-    public static final DeferredBlock<LiquidBlock> ULTRASALINE_WATER = BLOCKS.register("ultrasaline_water", ()-> new LiquidBlock(NWFluids.SOURCE_ULTRASALINE_WATER.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER)));
+    public static final DeferredBlock<LiquidBlock> ULTRASALINE_WATER = BLOCKS.register("ultrasaline_water", ()-> new UltrasalineWaterBlock(NWFluids.SOURCE_ULTRASALINE_WATER.get(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).replaceable().noCollission().strength(100.0F).pushReaction(PushReaction.DESTROY).noLootTable().liquid().sound(SoundType.EMPTY)));
 
     //Building Blocks
     public static final DeferredBlock<Block> PARCHED_WOOD = BLOCKS.register("parched_wood", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.STEM).strength(2.5F, 3.5F)));

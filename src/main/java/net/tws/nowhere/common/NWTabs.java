@@ -1,5 +1,8 @@
 package net.tws.nowhere.common;
 
+import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.PowderSnowBlock;
 import net.tws.nowhere.Nowhere;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -103,6 +106,10 @@ public class NWTabs {
                 output.accept(NWItems.FERROUS_ALLOY_PICKAXE);
                 output.accept(NWItems.FERROUS_ALLOY_AXE);
                 output.accept(NWItems.FERROUS_ALLOY_HOE);
+
+                output.accept(Items.BUCKET);
+                output.accept(NWItems.ULTRASALINE_WATER_BUCKET);
+
 
             }).build());
 

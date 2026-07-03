@@ -5,6 +5,8 @@ import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.Camera;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.renderer.FogRenderer;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -60,7 +62,8 @@ public class Nowhere {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            ItemBlockRenderTypes.setRenderLayer(NWFluids.FLOWING_ULTRASALINE_WATER.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(NWFluids.SOURCE_ULTRASALINE_WATER.get(), RenderType.translucent());
         }
         @SubscribeEvent
         public static void registerFluidExtensions(RegisterClientExtensionsEvent event){
@@ -90,8 +93,8 @@ public class Nowhere {
 
                 @Override
                 public void modifyFogRender(Camera camera, FogRenderer.FogMode mode, float renderDistance, float partialTick, float nearDistance, float farDistance, FogShape shape) {
-                    RenderSystem.setShaderFogStart(1f);
-                    RenderSystem.setShaderFogEnd(6f);
+                    RenderSystem.setShaderFogStart(3f);
+                    RenderSystem.setShaderFogEnd(12f);
                 }
             }, ultrasaline_water);
         }

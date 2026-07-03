@@ -16,6 +16,7 @@
   "block.nowhere.ferrous_scrap_heap": "Ferrous Scrap Heap",
   "block.nowhere.dusty_ferrous_scrap": "Dusty Ferrous Scrap",
   "block.nowhere.desert_roots": "Desert Roots",
+  "block.nowhere.ultrasaline_water": "Ultra-Saline Water",
 
   "block.nowhere.ferrous_alloy_block": "Block Of Ferrous Alloy",
   "block.nowhere.ferrous_alloy_door": "Ferrous Alloy Door",
@@ -95,6 +96,8 @@
   "item.nowhere.ferrous_alloy_chestplate": "Ferrous Alloy Chestplate",
   "item.nowhere.ferrous_alloy_leggings": "Ferrous Alloy Leggings",
   "item.nowhere.ferrous_alloy_boots": "Ferrous Alloy Boots",
+
+  "item.nowhere.ultrasaline_water_bucket": "Ultra-Saline Water Bucket",
 
   "advancements.nowhere_story.root.title": "Nowhere Story",
   "advancements.nowhere_story.root.description": "The story of an (un)lucky player thrown into this blasted plane",

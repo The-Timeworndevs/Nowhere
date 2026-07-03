@@ -4,7 +4,7 @@
     "Name": "nowhere:duststone"
   },
   "default_fluid": {
-    "Name": "minecraft:water",
+    "Name": "nowhere:ultrasaline_water",
     "Properties": {
       "level": "0"
     }

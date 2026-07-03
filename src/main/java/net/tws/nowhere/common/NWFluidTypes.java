@@ -19,9 +19,9 @@ public class NWFluidTypes {
     public static final DeferredHolder<FluidType, NWBaseFluidTypes> ULTRASALINE_WATER_TYPE = FLUID_TYPES.register("ultrasaline_water", () -> new NWBaseFluidTypes(
             STILL_ULTRASALINE_WATER_LOCATION,
             FLOWING_ULTRASALINE_WATER_LOCATION,
-            0x91f2b1b2 ,
-            new Vector3f(102f / 255f, 1f, 102f / 255f),
-            FluidType.Properties.create().canSwim(true).canDrown(true).density(3000).viscosity(6000)
+            0xfff2b1b2 ,
+            new Vector3f(0.906f,0.604f,0.608f),
+            FluidType.Properties.create().canSwim(true).canDrown(true).density(3000).viscosity(6000).canConvertToSource(true)
     ));
 
     public static void register(IEventBus eventBus) {
