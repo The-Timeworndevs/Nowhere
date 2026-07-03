@@ -1,6 +1,19 @@
 package net.tws.nowhere;
 
+import com.mojang.blaze3d.shaders.FogShape;
+import com.mojang.blaze3d.systems.RenderSystem;
+import net.minecraft.client.Camera;
+import net.minecraft.client.multiplayer.ClientLevel;
+import net.minecraft.client.renderer.FogRenderer;
+import net.minecraft.resources.ResourceLocation;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions;
+import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
+import net.neoforged.neoforge.event.server.ServerStoppingEvent;
 import net.tws.nowhere.common.*;
+import org.joml.Vector3f;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -42,13 +55,45 @@ public class Nowhere {
     public void onServerStarting(ServerStartingEvent event) {
     }
 
-    /*
+
     @EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
 
         }
+        @SubscribeEvent
+        public static void registerFluidExtensions(RegisterClientExtensionsEvent event){
+
+            NWBaseFluidTypes ultrasaline_water = NWFluidTypes.ULTRASALINE_WATER_TYPE.get();
+
+            event.registerFluidType(new IClientFluidTypeExtensions() {
+                @Override
+                public ResourceLocation getStillTexture() {
+                    return ultrasaline_water.getStillTexture();
+                }
+
+                @Override
+                public ResourceLocation getFlowingTexture() {
+                    return ultrasaline_water.getFlowingTexture();
+                }
+
+                @Override
+                public int getTintColor() {
+                    return ultrasaline_water.getTintColor();
+                }
+
+                @Override
+                public Vector3f modifyFogColor(Camera camera, float partialTick, ClientLevel level, int renderDistance, float darkenWorldAmount, Vector3f fluidFogColor) {
+                    return ultrasaline_water.getFogColor();
+                }
+
+                @Override
+                public void modifyFogRender(Camera camera, FogRenderer.FogMode mode, float renderDistance, float partialTick, float nearDistance, float farDistance, FogShape shape) {
+                    RenderSystem.setShaderFogStart(1f);
+                    RenderSystem.setShaderFogEnd(6f);
+                }
+            }, ultrasaline_water);
+        }
     }
-    */
 }
