@@ -83,6 +83,7 @@ public class NWTabs {
                 output.accept(NWBlocks.PARCHED_HANGING_SIGN_ITEM.get());
                 output.accept(NWBlocks.PARCHED_CRAFTING_TABLE_ITEM.get());
                 output.accept(NWBlocks.MAKESHIFT_FURNACE_ITEM.get());
+                output.accept(NWBlocks.MEAN_BED_ITEM.get());
             }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_TOOLS_TAB = GROUPS.register("nowhere_tools", () -> CreativeModeTab.builder()
@@ -136,6 +137,8 @@ public class NWTabs {
                 output.accept(NWItems.PARCHED_STICK.get());
                 output.accept(NWItems.BITUMEN_BALL.get());
                 output.accept(NWItems.SALT_PILE.get());
+                output.accept(NWItems.PLANT_FIBER.get());
+                output.accept(NWItems.COARSE_FABRIC.get());
             }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_FOOD_TAB = GROUPS.register("nowhere_food", () -> CreativeModeTab.builder()

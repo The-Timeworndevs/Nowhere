@@ -101,6 +101,8 @@ public class NWBlocks {
     public static final DeferredBlock<Block> PARCHED_CRAFTING_TABLE = BLOCKS.register("parched_crafting_table", ()-> new ParchedCraftingTableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.NETHER_WOOD).strength(2.5F, 3.5F)));
     public static final DeferredBlock<Block> MAKESHIFT_FURNACE = BLOCKS.register("makeshift_furnace", ()-> new FurnaceBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.BASALT).strength(0.8F,0.8F).requiresCorrectToolForDrops()));
 
+    public static final DeferredBlock<Block> MEAN_BED = BLOCKS.register("mean_bed", ()-> new BedBlock(DyeColor.YELLOW, BlockBehaviour.Properties.ofFullCopy(Blocks.YELLOW_BED)));
+
     //BlockItems
 
     //Natural Blocks
@@ -166,5 +168,6 @@ public class NWBlocks {
     public static final DeferredItem<BlockItem> PARCHED_HANGING_SIGN_ITEM = NWItems.ITEMS.register("parched_hanging_sign", (hangingSign) -> new HangingSignItem(PARCHED_HANGING_SIGN.get(), WALL_PARCHED_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
     public static final DeferredItem<BlockItem> PARCHED_CRAFTING_TABLE_ITEM = NWItems.ITEMS.registerSimpleBlockItem("parched_crafting_table", PARCHED_CRAFTING_TABLE);
     public static final DeferredItem<BlockItem> MAKESHIFT_FURNACE_ITEM = NWItems.ITEMS.registerSimpleBlockItem("makeshift_furnace", MAKESHIFT_FURNACE);
+    public static final DeferredItem<BlockItem> MEAN_BED_ITEM = NWItems.ITEMS.registerSimpleBlockItem("mean_bed", MEAN_BED);
 
 }

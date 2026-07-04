@@ -60,9 +60,10 @@ public class NWItems {
     public static final DeferredItem<Item> BITUMEN_BALL = ITEMS.registerSimpleItem("bitumen_ball", new Item.Properties());
     public static final DeferredItem<Item> SALT_PILE = ITEMS.registerSimpleItem("salt_pile", new Item.Properties());
     public static final DeferredItem<Item> DESERT_ROOT = ITEMS.registerSimpleItem("desert_root", new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationModifier(0.5f).build()));
-
+    public static final DeferredItem<Item> PLANT_FIBER = ITEMS.registerSimpleItem("plant_fiber", new Item.Properties());
+    public static final DeferredItem<Item> COARSE_FABRIC = ITEMS.registerSimpleItem("coarse_fabric", new Item.Properties());
     //Misc
-    //public static final DeferredItem<Item> ULTRASALINE_WATER_BUCKET = ITEM_REGISTRIES.registerSimpleItem("ultrasaline_water_bucket", new BucketItem());
+
     public static final DeferredItem<Item> DUSTY_JOURNAL = ITEMS.registerSimpleItem("dusty_journal", new Item.Properties());
 
 }

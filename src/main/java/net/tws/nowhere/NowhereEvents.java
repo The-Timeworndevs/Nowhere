@@ -6,8 +6,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent;
 import net.tws.nowhere.common.NWBlocks;
 
-@EventBusSubscriber(modid =
-        Nowhere.MODID)
+@EventBusSubscriber(modid = Nowhere.MODID)
 public class NowhereEvents {
 
     @SubscribeEvent
@@ -17,5 +16,6 @@ public class NowhereEvents {
         event.modify(BlockEntityType.HANGING_SIGN, NWBlocks.PARCHED_HANGING_SIGN.get());
         event.modify(BlockEntityType.HANGING_SIGN, NWBlocks.WALL_PARCHED_HANGING_SIGN.get());
         event.modify(BlockEntityType.FURNACE, NWBlocks.MAKESHIFT_FURNACE.get());
+        event.modify(BlockEntityType.BED, NWBlocks.MEAN_BED.get());
     }
 }
