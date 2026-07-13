@@ -1,4 +1,4 @@
-package net.tws.nowhere.common.blocks;
+package net.tws.nowhere.common.blocks.fluids;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvent;

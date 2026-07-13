@@ -18,10 +18,11 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.tws.nowhere.common.menus.ParchedCraftingMenu;
 
 public class ParchedCraftingTableBlock extends CraftingTableBlock {
-    public static final MapCodec<CraftingTableBlock> CODEC = simpleCodec(CraftingTableBlock::new);
+    public static final MapCodec<ParchedCraftingTableBlock> CODEC = simpleCodec(ParchedCraftingTableBlock::new);
     private static final Component CONTAINER_TITLE = Component.translatable("container.crafting");
 
-    public MapCodec<? extends CraftingTableBlock> codec() {
+    @Override
+    public MapCodec<? extends ParchedCraftingTableBlock> codec() {
         return CODEC;
     }
 
@@ -29,17 +30,20 @@ public class ParchedCraftingTableBlock extends CraftingTableBlock {
         super(properties);
     }
 
+    @Override
     protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
-        if (level.isClientSide) {
-            return InteractionResult.SUCCESS;
-        } else {
+        if (!level.isClientSide()) {
             player.openMenu(state.getMenuProvider(level, pos));
             player.awardStat(Stats.INTERACT_WITH_CRAFTING_TABLE);
-            return InteractionResult.CONSUME;
         }
+
+        return InteractionResult.SUCCESS;
     }
 
+    @Override
     protected MenuProvider getMenuProvider(BlockState state, Level level, BlockPos pos) {
-        return new SimpleMenuProvider((p_52229_, p_52230_, p_52231_) -> new ParchedCraftingMenu(p_52229_, p_52230_, ContainerLevelAccess.create(level, pos)), CONTAINER_TITLE);
+        return new SimpleMenuProvider(
+                (containerId, inventory, player) -> new CraftingMenu(containerId, inventory, ContainerLevelAccess.create(level, pos)), CONTAINER_TITLE
+        );
     }
 }

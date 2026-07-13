@@ -1,13 +1,9 @@
 package net.tws.nowhere;
 
-import com.mojang.blaze3d.shaders.FogShape;
+
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.Camera;
 import net.minecraft.client.multiplayer.ClientLevel;
-import net.minecraft.client.renderer.FogRenderer;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
@@ -15,7 +11,8 @@ import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import net.tws.nowhere.common.*;
-import net.tws.nowhere.render.MeanBedRenderer;
+import net.tws.nowhere.common.blocks.NWBlockEntities;
+import net.tws.nowhere.common.blocks.NWBlocks;
 import org.joml.Vector3f;
 import org.slf4j.Logger;
 

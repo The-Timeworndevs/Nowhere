@@ -4,7 +4,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent;
-import net.tws.nowhere.common.NWBlocks;
+import net.tws.nowhere.common.blocks.NWBlocks;
 
 @EventBusSubscriber(modid = Nowhere.MODID)
 public class NowhereEvents {
@@ -16,6 +16,5 @@ public class NowhereEvents {
         event.modify(BlockEntityType.HANGING_SIGN, NWBlocks.PARCHED_HANGING_SIGN.get());
         event.modify(BlockEntityType.HANGING_SIGN, NWBlocks.WALL_PARCHED_HANGING_SIGN.get());
         event.modify(BlockEntityType.FURNACE, NWBlocks.MAKESHIFT_FURNACE.get());
-        event.modify(BlockEntityType.BED, NWBlocks.YELLOW_MEAN_BED.get());
     }
 }

@@ -1,4 +1,4 @@
-package net.tws.nowhere.common.blocks;
+package net.tws.nowhere.common.blocks.sets;
 
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.level.block.SoundType;

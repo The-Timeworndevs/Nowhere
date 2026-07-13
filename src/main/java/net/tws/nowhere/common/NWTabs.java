@@ -1,14 +1,13 @@
 package net.tws.nowhere.common;
 
 import net.minecraft.world.item.Items;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.PowderSnowBlock;
 import net.tws.nowhere.Nowhere;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.tws.nowhere.common.blocks.NWBlocks;
 
 public class NWTabs {
 
