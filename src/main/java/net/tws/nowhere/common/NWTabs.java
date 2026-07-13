@@ -83,7 +83,8 @@ public class NWTabs {
                 output.accept(NWBlocks.PARCHED_HANGING_SIGN_ITEM.get());
                 output.accept(NWBlocks.PARCHED_CRAFTING_TABLE_ITEM.get());
                 output.accept(NWBlocks.MAKESHIFT_FURNACE_ITEM.get());
-                output.accept(NWBlocks.MEAN_BED_ITEM.get());
+
+                //output.accept(NWBlocks.YELLOW_MEAN_BED_ITEM.get());
             }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NOWHERE_TOOLS_TAB = GROUPS.register("nowhere_tools", () -> CreativeModeTab.builder()
@@ -121,6 +122,9 @@ public class NWTabs {
                 output.accept(NWItems.PARCHED_WOODEN_SWORD);
                 output.accept(NWItems.SCRAP_SWORD);
                 output.accept(NWItems.FERROUS_ALLOY_SWORD);
+                output.accept(NWItems.PARCHED_WOODEN_AXE);
+                output.accept(NWItems.SCRAP_AXE);
+                output.accept(NWItems.FERROUS_ALLOY_AXE);
                 output.accept(NWItems.FERROUS_ALLOY_HELMET);
                 output.accept(NWItems.FERROUS_ALLOY_CHESTPLATE);
                 output.accept(NWItems.FERROUS_ALLOY_LEGGINGS);

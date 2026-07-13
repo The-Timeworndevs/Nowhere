@@ -11,10 +11,11 @@ import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
-import net.neoforged.neoforge.event.server.ServerStoppingEvent;
 import net.tws.nowhere.common.*;
+import net.tws.nowhere.render.MeanBedRenderer;
 import org.joml.Vector3f;
 import org.slf4j.Logger;
 
@@ -47,6 +48,8 @@ public class Nowhere {
 
         NWTabs.GROUPS.register(modEventBus);
 
+        NWBlockEntities.BLOCK_ENTITIES.register(modEventBus);
+
         NeoForge.EVENT_BUS.register(this);
 
         //modContainer.registerConfig(ModConfig.Type.COMMON, NWConfig.SPEC);
@@ -65,6 +68,12 @@ public class Nowhere {
             ItemBlockRenderTypes.setRenderLayer(NWFluids.FLOWING_ULTRASALINE_WATER.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(NWFluids.SOURCE_ULTRASALINE_WATER.get(), RenderType.translucent());
         }
+
+        @SubscribeEvent
+        public static void registerBlockEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
+            event.registerBlockEntityRenderer(NWBlockEntities.MEAN_BED_BE.get(), MeanBedRenderer::new);
+        }
+
         @SubscribeEvent
         public static void registerFluidExtensions(RegisterClientExtensionsEvent event){
 
