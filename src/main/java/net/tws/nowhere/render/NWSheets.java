@@ -14,6 +14,6 @@ public class NWSheets extends Sheets {
 
     public static final Material[] NW_BED_TEXTURES = Arrays.stream(DyeColor.values())
             .sorted(Comparator.comparingInt(DyeColor::getId))
-            .map(dyeColor -> new Material(BED_SHEET, ResourceLocation.fromNamespaceAndPath(Nowhere.MODID, "entity/bed/" + dyeColor.getName())))
+            .map(dyeColor -> new Material(NW_BED_SHEET, ResourceLocation.fromNamespaceAndPath(Nowhere.MODID, "entity/bed/" + dyeColor.getName())))
             .toArray(Material[]::new);
 }
