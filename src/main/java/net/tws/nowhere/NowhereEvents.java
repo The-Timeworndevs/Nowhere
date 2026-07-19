@@ -4,7 +4,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent;
-import net.tws.nowhere.common.blocks.NWBlocks;
+import net.tws.nowhere.common.init.NWBlocks;
 
 @EventBusSubscriber(modid = Nowhere.MODID)
 public class NowhereEvents {

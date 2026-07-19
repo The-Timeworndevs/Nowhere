@@ -1,4 +1,4 @@
-package net.tws.nowhere.common;
+package net.tws.nowhere.common.init;
 
 import net.minecraft.world.item.Items;
 import net.tws.nowhere.Nowhere;
@@ -7,7 +7,6 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.tws.nowhere.common.blocks.NWBlocks;
 
 public class NWTabs {
 

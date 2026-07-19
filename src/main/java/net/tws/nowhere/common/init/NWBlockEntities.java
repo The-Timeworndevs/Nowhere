@@ -1,4 +1,4 @@
-package net.tws.nowhere.common.blocks;
+package net.tws.nowhere.common.init;
 
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.entity.BlockEntityType;

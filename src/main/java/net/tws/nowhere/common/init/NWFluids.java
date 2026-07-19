@@ -1,4 +1,4 @@
-package net.tws.nowhere.common;
+package net.tws.nowhere.common.init;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.material.Fluid;
@@ -7,7 +7,6 @@ import net.neoforged.neoforge.fluids.BaseFlowingFluid;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.tws.nowhere.Nowhere;
-import net.tws.nowhere.common.blocks.NWBlocks;
 
 public class NWFluids {
 

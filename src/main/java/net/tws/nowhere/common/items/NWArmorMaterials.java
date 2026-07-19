@@ -12,13 +12,14 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.tws.nowhere.Nowhere;
-import net.tws.nowhere.common.NWItems;
+import net.tws.nowhere.common.init.NWItems;
 
 import java.util.EnumMap;
 import java.util.List;
 import java.util.function.Supplier;
 
 public class NWArmorMaterials {
+
 
     //Ferrous Scrap Set?
 

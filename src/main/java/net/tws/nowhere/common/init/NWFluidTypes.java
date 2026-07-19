@@ -1,4 +1,4 @@
-package net.tws.nowhere.common;
+package net.tws.nowhere.common.init;
 
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
