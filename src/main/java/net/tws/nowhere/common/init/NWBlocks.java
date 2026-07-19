@@ -169,7 +169,7 @@ public class NWBlocks {
     public static final DeferredItem<BlockItem> PARCHED_TRAPDOOR_ITEM = NWItems.ITEMS.registerSimpleBlockItem("parched_trapdoor", PARCHED_TRAPDOOR);
     public static final DeferredItem<BlockItem> FERROUS_ALLOY_DOOR_ITEM = NWItems.ITEMS.registerSimpleBlockItem("ferrous_alloy_door", FERROUS_ALLOY_DOOR);
     public static final DeferredItem<BlockItem> FERROUS_ALLOY_TRAPDOOR_ITEM = NWItems.ITEMS.registerSimpleBlockItem("ferrous_alloy_trapdoor", FERROUS_ALLOY_TRAPDOOR);
-    public static final DeferredItem<BlockItem> MAKESHIFT_TORCH_ITEM = NWItems.ITEMS.register("makeshift_torch", (torch) -> new StandingAndWallBlockItem(WALL_MAKESHIFT_TORCH.get(), MAKESHIFT_TORCH.get(), new Item.Properties(), Direction.DOWN));
+    public static final DeferredItem<BlockItem> MAKESHIFT_TORCH_ITEM = NWItems.ITEMS.register("makeshift_torch", (torch) -> new StandingAndWallBlockItem(MAKESHIFT_TORCH.get(), WALL_MAKESHIFT_TORCH.get(), new Item.Properties(), Direction.DOWN));
 
     public static final DeferredItem<BlockItem> PARCHED_SIGN_ITEM = NWItems.ITEMS.register("parched_sign", (sign) -> new SignItem(new Item.Properties().stacksTo(16), PARCHED_SIGN.get(), WALL_PARCHED_SIGN.get()));
     public static final DeferredItem<BlockItem> PARCHED_HANGING_SIGN_ITEM = NWItems.ITEMS.register("parched_hanging_sign", (hangingSign) -> new HangingSignItem(PARCHED_HANGING_SIGN.get(), WALL_PARCHED_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
