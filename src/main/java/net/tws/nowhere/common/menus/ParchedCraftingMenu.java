@@ -91,9 +91,6 @@ public class ParchedCraftingMenu extends RecipeBookMenu<CraftingInput, CraftingR
         }
     }
 
-    /**
-     * Callback for when the crafting matrix is changed.
-     */
     @Override
     public void slotsChanged(Container inventory) {
         if (!this.placingRecipe) {
@@ -128,26 +125,17 @@ public class ParchedCraftingMenu extends RecipeBookMenu<CraftingInput, CraftingR
         return recipe.value().matches(this.craftSlots.asCraftInput(), this.player.level());
     }
 
-    /**
-     * Called when the container is closed.
-     */
     @Override
     public void removed(Player player) {
         super.removed(player);
         this.access.execute((p_39371_, p_39372_) -> this.clearContainer(player, this.craftSlots));
     }
 
-    /**
-     * Determines whether supplied player can use this container
-     */
     @Override
     public boolean stillValid(Player player) {
         return stillValid(this.access, player, NWBlocks.PARCHED_CRAFTING_TABLE.get());
     }
 
-    /**
-     * Handle when the stack in slot {@code index} is shift-clicked. Normally this moves the stack between the player inventory and the other inventory(s).
-     */
     @Override
     public ItemStack quickMoveStack(Player player, int index) {
         ItemStack itemstack = ItemStack.EMPTY;
@@ -195,9 +183,6 @@ public class ParchedCraftingMenu extends RecipeBookMenu<CraftingInput, CraftingR
         return itemstack;
     }
 
-    /**
-     * Called to determine if the current slot is valid for the stack merging (double-click) code. The stack passed in is null for the initial slot that was double-clicked.
-     */
     @Override
     public boolean canTakeItemForPickAll(ItemStack stack, Slot slot) {
         return slot.container != this.resultSlots && super.canTakeItemForPickAll(stack, slot);

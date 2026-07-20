@@ -54,7 +54,7 @@ public class NWBlocks {
         }
     });
 
-    public static final DeferredBlock<LiquidBlock> ULTRASALINE_WATER = BLOCKS.register("ultrasaline_water", ()-> new UltrasalineWaterBlock(NWFluids.SOURCE_ULTRASALINE_WATER.get(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BROWN).replaceable().noCollission().strength(100.0F).pushReaction(PushReaction.DESTROY).noLootTable().liquid().sound(SoundType.EMPTY)));
+    public static final DeferredBlock<LiquidBlock> ULTRASALINE_WATER = BLOCKS.register("ultrasaline_water", ()-> new UltrasalineWaterBlock(NWFluids.SOURCE_ULTRASALINE_WATER.get(), BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).replaceable().noCollission().strength(100.0F).pushReaction(PushReaction.DESTROY).noLootTable().liquid().sound(SoundType.EMPTY)));
 
     //Building Blocks
     public static final DeferredBlock<Block> PARCHED_WOOD = BLOCKS.register("parched_wood", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.STEM).strength(2.5F, 3.5F)));
