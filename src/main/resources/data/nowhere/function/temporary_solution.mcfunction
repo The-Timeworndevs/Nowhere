@@ -3,3 +3,4 @@
 gamerule doInsomnia false
 gamerule doPatrolSpawning false
 gamerule doTraderSpawning false
+gamerule doWeatherCycle false
